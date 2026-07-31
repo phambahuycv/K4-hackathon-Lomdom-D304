@@ -101,7 +101,7 @@ Loại: [x] Tối ưu tính năng có sẵn  [ ] Tính năng mới
   - Bùi Đức Hiếu — AI Engineer: system prompt, phân loại intent, structured response Gemini và guardrail groundedness.
   - Lăng Nhật Minh — Data & QA: mining evidence, golden set, scoring rubric, Run 01/Run 02 và phân tích failure.
   - Demo/dry run: Phạm Bá Huy điều phối; cả nhóm chuẩn bị phần mình giải thích được, gồm một happy path và một case failure.
-- Willing users (≥3 người): [Tên 1], [Tên 2], [Tên 3] — sẽ được mời thử trong vòng validation CP5. Kế hoạch validation: 1) giao task thật “hãy dùng trợ lý này để hiểu nội dung trang đang mở”; 2) quan sát chỗ bấm, chỗ khó hiểu; 3) hỏi đúng 3 câu: “Điều gì khó hiểu nhất?”, “Kết quả này có tin không?”, “Bạn có dùng thật không?”. Mỗi người thử sẽ được log thành 1 dòng trong validation/.
+- Willing users (≥3 người): Cao Nam, Phương Nam và An. Cả ba đã tham gia validation CP5, được đánh dấu trong `validation/feedback-log.md`. Kế hoạch validation: 1) giao task thật “hãy dùng trợ lý này để hiểu nội dung trang đang mở”; 2) quan sát chỗ bấm, chỗ khó hiểu; 3) hỏi đúng 3 câu: “Điều gì khó hiểu nhất?”, “Kết quả này có tin không?”, “Bạn có dùng thật không?”. Mỗi người thử được log thành 1 dòng trong `validation/`.
 - Multi-prototype (nếu làm): hai phương án sẽ được thử trước khi chốt: (1) trả lời ngay khi có slide context, (2) hỏi trước “bạn muốn tóm tắt hay giải thích?” trước khi trả lời. Chọn phương án 1 vì ít gây friction và khớp trực tiếp với pain trong mining log.
 
 ## §9. Changelog
@@ -111,3 +111,4 @@ Loại: [x] Tối ưu tính năng có sẵn  [ ] Tính năng mới
 | 2026-07-31 | Chốt automation ở mức conditional | Vì sai có thể làm học viên hiểu sai kiến thức, nên cần đường lui rõ |
 | 2026-07-31 | Chốt không hỗ trợ đọc biểu đồ ảnh/vùng khoanh annotation | Run 01 cho thấy request không gửi ảnh/crop/toạ độ; GS10 và GS16 chuyển sang kiểm tra graceful failure |
 | 2026-07-31 | Ghi nhận Run 01 chưa đạt quality bar | `eval/run-01.csv`: 14/20 pass, 4 fail, 2 case chưa chạy đúng fixture; cần guardrail Day 2 và vùng khoanh trước Run 02 |
+| 2026-07-31 | Hoàn thành validation CP5 với 5 học viên ngoài nhóm | `validation/feedback-log.md`: 3 willing user và 2 feedback cao xác nhận cần guardrail Day 2 cùng thông báo rõ giới hạn vùng khoanh |
