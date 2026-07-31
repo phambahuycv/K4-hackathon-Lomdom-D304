@@ -14,6 +14,13 @@ export async function sendTutorMessage({
   pdfName = 'Slide',
   history = []
 }) {
+  const cleanHistory = history.slice(-6);
+  const lastMessage = cleanHistory[cleanHistory.length - 1];
+  const lastText = lastMessage?.rawText || lastMessage?.text || '';
+  if (lastMessage?.sender === 'user' && lastText.trim() === message.trim()) {
+    cleanHistory.pop();
+  }
+
   const response = await fetch(`${API_BASE_URL}/api/tutor`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -22,7 +29,7 @@ export async function sendTutorMessage({
       currentPage,
       pdfTextMap,
       pdfName,
-      history: history.slice(-6).map((item) => ({
+      history: cleanHistory.map((item) => ({
         sender: item.sender,
         text: item.text || '',
         rawText: item.rawText || item.text || ''

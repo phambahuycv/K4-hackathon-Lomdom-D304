@@ -160,7 +160,12 @@ export default function ReaderPage() {
         context: response.context,
         text: response.text,
         rawText: response.text,
-        downloadUrl: response.downloadUrl
+        downloadUrl: response.downloadUrl,
+        source: response.source,
+        model: response.model,
+        warning: response.warning,
+        retrievedPages: response.retrievedPages,
+        toolCalls: response.toolCalls || []
       };
 
       setChatMessages(prev => [...prev, aiMsg]);
@@ -177,7 +182,8 @@ export default function ReaderPage() {
           sender: 'ai',
           context: 'Lỗi hệ thống',
           text: `⚠️ Không thể kết nối với AI Tutor (${err.message || 'Lỗi không xác định'}). Vui lòng kiểm tra lại kết nối mạng.`,
-          rawText: 'Lỗi hệ thống'
+          rawText: 'Lỗi hệ thống',
+          source: 'error'
         }
       ]);
     } finally {
@@ -801,6 +807,27 @@ export default function ReaderPage() {
           }}>
             {chatMessages.map((msg, index) => (
               <div key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: msg.sender === 'user' ? 'flex-end' : 'flex-start' }}>
+                {msg.sender === 'ai' && msg.source && (
+                  <span style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '5px',
+                    marginBottom: '5px',
+                    padding: '3px 8px',
+                    borderRadius: '999px',
+                    fontSize: '10.5px',
+                    fontWeight: 700,
+                    color: msg.source === 'gemini' ? '#047857' : msg.source === 'error' ? '#b91c1c' : '#475569',
+                    backgroundColor: msg.source === 'gemini' ? '#ecfdf5' : msg.source === 'error' ? '#fef2f2' : '#f1f5f9',
+                    border: `1px solid ${msg.source === 'gemini' ? '#a7f3d0' : msg.source === 'error' ? '#fecaca' : '#e2e8f0'}`
+                  }}>
+                    {msg.source === 'gemini'
+                      ? 'AI Tutor'
+                      : msg.source === 'error'
+                        ? 'AI đang gián đoạn'
+                        : 'Xử lý cục bộ'}
+                  </span>
+                )}
                 {msg.context && (
                   <span style={{ fontSize: '11.5px', color: '#94a3b8', marginBottom: '4px', fontStyle: 'italic' }}>
                     {msg.context}
@@ -820,7 +847,75 @@ export default function ReaderPage() {
                 }}>
                   {msg.sender === 'user' ? msg.text : renderFormattedMessage(msg.text)}
 
+                  {msg.warning && (
+                    <div style={{
+                      marginTop: '10px',
+                      paddingTop: '8px',
+                      borderTop: '1px solid #fee2e2',
+                      color: '#b91c1c',
+                      fontSize: '11px'
+                    }}>
+                      Chi tiết kỹ thuật: {msg.warning}
+                    </div>
+                  )}
+
                   {/* Nút bấm Tải Slide PDF khi người dùng yêu cầu */}
+                  {msg.sender === 'ai' && msg.toolCalls?.length > 0 && (
+                    <div style={{
+                      marginTop: '12px',
+                      paddingTop: '10px',
+                      borderTop: '1px solid #e2e8f0'
+                    }}>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        marginBottom: '8px',
+                        color: '#64748b',
+                        fontSize: '11px',
+                        fontWeight: 800,
+                        letterSpacing: '0.04em',
+                        textTransform: 'uppercase'
+                      }}>
+                        <Sparkles size={13} color="#0284c7" />
+                        Tool đã gọi
+                      </div>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '7px' }}>
+                        {msg.toolCalls.map((tool, toolIndex) => (
+                          <div
+                            key={`${tool.name}-${toolIndex}`}
+                            style={{
+                              display: 'flex',
+                              alignItems: 'flex-start',
+                              gap: '8px',
+                              padding: '8px 10px',
+                              borderRadius: '10px',
+                              backgroundColor: tool.status === 'success' ? '#f0fdf4' : '#fef2f2',
+                              border: `1px solid ${tool.status === 'success' ? '#bbf7d0' : '#fecaca'}`
+                            }}
+                          >
+                            <span style={{
+                              width: '7px',
+                              height: '7px',
+                              marginTop: '5px',
+                              flexShrink: 0,
+                              borderRadius: '50%',
+                              backgroundColor: tool.status === 'success' ? '#22c55e' : '#ef4444'
+                            }} />
+                            <code style={{
+                              color: '#0f172a',
+                              fontSize: '12px',
+                              fontWeight: 700,
+                              fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace'
+                            }}>
+                              {tool.name}
+                            </code>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
                   {msg.downloadUrl && (
                     <div style={{ marginTop: '12px', paddingTop: '10px', borderTop: '1px solid #e2e8f0' }}>
                       <a
