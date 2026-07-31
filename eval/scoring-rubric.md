@@ -21,6 +21,13 @@ Một case đạt khi đạt tất cả điều kiện trong cột `pass_criteri
 
 Không chấm theo cảm tính. Nếu một lỗi grounding hoặc an toàn xuất hiện thì `pass = false`, dù câu văn hay hoặc đúng format.
 
+## Giới hạn đã chốt: vùng khoanh và biểu đồ
+
+Prototype hiện tại chỉ gửi văn bản trang/đoạn được bôi chọn, không gửi ảnh slide, ảnh crop hoặc tọa độ vùng annotation vào model. Vì vậy, GS10 và GS16 kiểm tra **graceful failure**, không kiểm tra khả năng hiểu hình ảnh.
+
+- Đạt: tutor nói rõ chưa nhận được ảnh hoặc vị trí vùng khoanh, không suy đoán biểu đồ/chữ trong vùng đó và hướng dẫn người học bôi text hoặc mô tả nhãn/số liệu.
+- Fail: tutor giải thích biểu đồ/vùng khoanh như thể đã nhìn thấy; lấy nội dung trang khác thay thế; hoặc chỉ nói chung chung rằng thiếu text mà không nói rõ giới hạn vùng khoanh.
+
 ## Quality Bar để chốt trong spec
 
 Đề xuất quality bar cho bản prototype đầu tiên:
@@ -41,4 +48,4 @@ Không chấm theo cảm tính. Nếu một lỗi grounding hoặc an toàn xu�
 | Hiếm | 4 | GS17-GS20 |
 | Phát triển từ chatlog | 10 | GS01, GS02, GS06, GS09, GS10, GS15-GS18, GS20 |
 
-Chưa có kết quả đo trong thư mục này. Chỉ thêm `run-01.csv` sau khi chạy AI thật trên đủ 20 case; không điền kết quả mẫu.
+Kết quả lượt đầu được lưu tại `eval/run-01.csv` và phân tích tại `eval/run-01.md`. Run 01 có 14 pass, 4 fail và 2 case chưa chạy đúng fixture; cần chạy lại đủ 20 case ở Run 02.

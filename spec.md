@@ -40,7 +40,8 @@ Loại: [x] Tối ưu tính năng có sẵn  [ ] Tính năng mới
   - Không hỗ trợ toàn bộ khoá học bằng tìm kiếm tự do ngoài dữ liệu slide đã cung cấp.
   - Không thay thế TA/giảng viên khi câu hỏi cần thẩm quyền chuyên môn.
   - Không xây dựng hệ thống upload và index tài liệu mới ngoài slide hiện có.
-- Mức prototype nhắm tới: [x] Working — phần core “dùng slide context hiện tại để trả lời câu hỏi” chạy thật; UI điều hướng và một số fallback sẽ giữ ở mức mock/đơn giản.
+  - Không đọc hoặc giải thích biểu đồ, hình ảnh hay vùng khoanh annotation khi request chỉ có text; tutor phải báo rõ giới hạn này thay vì đoán.
+- Mức prototype nhắm tới: [x] Working — phần core “dùng slide context hiện tại để trả lời câu hỏi” gọi Gemini thật; điều hướng, guardrail tài liệu và fallback cục bộ là logic hỗ trợ. Vùng khoanh/biểu đồ ảnh không thuộc scope của phiên bản này.
 - Automation: [x] conditional — phần lớn trường hợp có ngữ cảnh slide rõ ràng sẽ tự trả lời; khi không chắc, thiếu căn cứ hoặc ngoài phạm vi thì chuyển sang hỏi lại/thu hẹp phạm vi. Lý do theo cost-of-error: sai ở đây có thể khiến học viên hiểu sai kiến thức, nên AI không được làm liều; cần có đường lui rõ.
 - §4b. Nguyên tắc đã áp dụng:
 
@@ -59,43 +60,48 @@ Loại: [x] Tối ưu tính năng có sẵn  [ ] Tính năng mới
 |---|---|---|---|
 | Học viên hỏi “tóm tắt slide này” nhưng hệ thống không có nội dung trang hiện tại | Nguồn sự thật | Trả lời rõ rằng không có slide context để dùng; không bịa; cho phép mở lại trang đúng | G10, G11 |
 | Học viên đang ở trang 33 nhưng hệ thống nhầm sang trang khác do mapping sai | Nguồn sự thật | Nhận diện lỗi, nêu “mình đang dùng trang X”, cho phép người dùng chỉnh lại | G10, G9 |
+| Học viên hỏi Day 2 khi request chỉ có `pdf_name` và `pdfTextMap` của Day 1 | Nguồn sự thật | Nêu rõ đang mở Day 1, đề nghị/chuyển sang Day 2; tuyệt đối không tóm tắt Day 1 như Day 2 | G10, G11, PAIR — Explainability + Trust |
 | Học viên hỏi “giải thích trang 4” nhưng không có đúng page context | Mơ hồ / thiếu thông tin | Hỏi lại 1 câu ngắn: “Bạn đang xem trang nào?” hoặc “Bạn muốn tóm tắt hay giải thích khái niệm?” | G10 |
 | Học viên hỏi về một câu hỏi quá rộng như “tóm tắt toàn bộ bài giảng” | Ngoài phạm vi / thẩm quyền | Thu hẹp phạm vi: “Mình có thể tóm tắt trang hiện tại hoặc một phần slide đã chọn” | G10, G11 |
 | Học viên hỏi về thời tiết/đời sống thay vì môn học | Ngoài phạm vi / thẩm quyền | Lịch sự chuyển hướng về nội dung học tập, không lẫn sang đời sống | G1 |
 | Học viên hỏi về khái niệm khó và AI hiểu sai vì slide không đủ chi tiết | Đặc thù domain | Trả lời bằng cách nêu “dựa trên slide hiện tại” và lưu ý nếu cần hỏi TA/giảng viên | G11 |
+| Học viên khoanh đỏ biểu đồ/chữ trên slide nhưng hệ thống không nhận ảnh hoặc tọa độ annotation | Đặc thù domain | Nêu rõ không thấy vùng khoanh; không đoán biểu đồ/chữ; hướng dẫn bôi text hoặc mô tả nhãn/số liệu | G10, G11, PAIR — Errors + Graceful Failure |
 | Học viên không đồng ý với câu trả lời: “không, trang này là…” | Correction / sửa sai | Chấp nhận sửa, cập nhật context và phản hồi lại | G9 |
 | Học viên đưa một câu hỏi có nhiều nghĩa (ví dụ “giải thích slide này”) | Mơ hồ / thiếu thông tin | Yêu cầu làm rõ bằng một câu hỏi ngắn, không đoán | G10 |
 
 ## §6. Bốn đường đi của trải nghiệm
 - Happy path: Học viên đang xem slide, hỏi “tóm tắt nội dung chính của trang này”, hệ thống đọc trang hiện tại, trả lời ngắn gọn, có trích dẫn [Trang X].
 - Low-confidence (②): Học viên hỏi về trang nhưng ngữ cảnh thiếu hoặc không đủ rõ; hệ thống nói rõ “mình chưa chắc” và hỏi thêm một câu ngắn thay vì đoán.
-- Failure/không căn cứ (①): Không có nội dung trang, hoặc mapping page lỗi; hệ thống trả lời bằng thái độ rõ ràng, không bịa, và cho phép người dùng chỉnh lại.
-- Correction (user sửa): Người dùng phản hồi “không, mình đang xem trang 14”, hệ thống cập nhật và trả lời lại.
+- Failure/không căn cứ (①): Không có nội dung trang, mapping page lỗi hoặc user hỏi Day 2 khi context đang là Day 1; hệ thống nói rõ tài liệu/trang hiện có, không bịa và cho phép người dùng chỉnh lại.
+- Correction (user sửa): Người dùng phản hồi “không, mình đang xem trang 14” hoặc chuyển sang đúng tài liệu Day 2; hệ thống cập nhật context và phản hồi lại.
 - Khi bị đòi ngoài phạm vi (③): Học viên hỏi chuyện ngoài môn học hoặc yêu cầu làm quá phạm vi; hệ thống chuyển hướng ngắn gọn.
-- Case đặc thù domain (④): Nếu câu hỏi cần chuyên môn sâu hoặc có khả năng hiểu sai về kiến thức, hệ thống nhấn mạnh giới hạn và đề xuất hỏi TA/giảng viên.
+- Case đặc thù domain (④): Nếu câu hỏi cần chuyên môn sâu, biểu đồ ảnh hoặc vùng khoanh không được gửi vào request, hệ thống nêu giới hạn và đề xuất bôi text/mô tả nhãn-số liệu hoặc hỏi TA/giảng viên.
 
 ## §7. Kiểm thử
 - Chiều chất lượng + định nghĩa kiểm chứng được:
   - Groundedness: câu trả lời có căn cứ từ slide hiện tại hoặc nói rõ không có căn cứ.
   - Relevance: câu trả lời đúng câu hỏi về trang/slide hiện tại.
   - Safety/clarity: không bịa, không vượt phạm vi, không làm học viên hiểu sai.
-- Golden set: file sẽ lưu trong eval/ với tối thiểu 20 case, gồm 8 case thường, 8 case khó/biên, 4 case hiếm; trong đó ≥10 case được phát triển từ chatlog thật hoặc từ dữ liệu mining.
-- Quality bar (chốt từ 23:59 N1 và giữ nguyên): “Đạt khi ≥85% các case qua bộ có groundedness pass, và 100% các case out-of-scope/uncertain phải không trả lời sai thành thật.”
+- Golden set: `eval/golden-set.csv` gồm 20 case: 8 case thường, 8 case khó/biên, 4 case hiếm; trong đó 10 case phát triển từ chatlog thật. Cách chấm nằm tại `eval/scoring-rubric.md`.
+- Quality bar (chốt từ 23:59 N1 và giữ nguyên): “Đạt khi ít nhất 17/20 case (85%) pass, và 0 lỗi grounding/an toàn ở GS09, GS10, GS13, GS15, GS16.”
 - Kết quả các lượt chạy:
 
 | Lượt chạy | Groundedness | Relevance | Safety | Ghi chú |
 |---|---:|---:|---:|---|
-| Lượt 1 (manual) | TBD | TBD | TBD | Chưa chạy chính thức; sẽ cập nhật trong eval/ |
-| Lượt 2 | TBD | TBD | TBD | Sau khi chỉnh prompt và fallback |
+| Lượt 1 (manual) | 17/18 case đã chạy (94,4%) | 14/18 (77,8%) | 14/18 (77,8%) | `eval/run-01.csv`: 14/20 pass theo toàn bộ golden set; GS09 và GS17 chưa chạy đúng fixture; chưa đạt quality bar |
+| Lượt 2 | TBD | TBD | TBD | Chạy lại đủ 20 case sau khi sửa guardrail vùng khoanh và guardrail tài liệu Day 2 |
+
+- Failure analysis Run 01: `eval/run-01.md`. Failure chính là Gemini tóm tắt Day 1 như Day 2 (GS18), phản hồi chưa minh bạch về giới hạn vùng khoanh (GS10, GS16) và chưa hỏi lại input mơ hồ “Trang 8” (GS12). Không đạt quality bar không làm mất toàn bộ điểm R4 nếu kết quả, case fail và phân tích nguyên nhân được giữ đầy đủ; tuy nhiên Run 01 chưa đủ điều kiện đóng CP3 vì GS09 và GS17 chưa chạy đúng fixture.
 
 ## §8. Phân công & kế hoạch
-- Phân công có tên: spec / evidence / prompt / code / demo.
-  - Spec: viết lại mục tiêu, chỗ khó, quality bar.
-  - Evidence: duy trì mining log và ví dụ bằng chứng.
-  - Prompt: thiết kế intent classifier + prompt trả lời có slide context.
-  - Code: tích hợp vào prototype VLearn Tutor.
-  - Demo: chuẩn bị case happy path + case lỗi và dry run.
-- Willing users (≥3 người): [Tên 1], [Tên 2], [Tên 3] — sẽ được mời thử trong vòng validation CP5. Kế hoạch validation: 1) giao task thật “hãy dùng trợ lý này để hiểu nội dung trang đang mở”; 2) quan sát chỗ bấm, chỗ khó hiểu; 3) hỏi đúng 3 câu: “Điều gì khó hiểu nhất?”, “Kết quả này có tin không?”, “Bạn có dùng thật không?”. Mỗi người thử sẽ được log thành 1 dòng trong validation/.
+- Phân công có tên:
+  - Phạm Bá Huy — PM/spec: hoàn thiện spec, bảng impact, kế hoạch validation, slide và điều phối checkpoint.
+  - Trần Văn Đông — Backend Engineer: FastAPI `/api/tutor`, quản lý biến môi trường Gemini, guardrail tài liệu Day 1/Day 2 và fallback backend.
+  - Hoàng Văn Thành — Frontend Engineer: PDF viewer, trạng thái tài liệu/trang đang mở, trích xuất text, selection và điều hướng UI.
+  - Bùi Đức Hiếu — AI Engineer: system prompt, phân loại intent, structured response Gemini và guardrail groundedness.
+  - Lăng Nhật Minh — Data & QA: mining evidence, golden set, scoring rubric, Run 01/Run 02 và phân tích failure.
+  - Demo/dry run: Phạm Bá Huy điều phối; cả nhóm chuẩn bị phần mình giải thích được, gồm một happy path và một case failure.
+- Willing users (≥3 người): Cao Nam, Phương Nam và An. Cả ba đã tham gia validation CP5, được đánh dấu trong `validation/feedback-log.md`. Kế hoạch validation: 1) giao task thật “hãy dùng trợ lý này để hiểu nội dung trang đang mở”; 2) quan sát chỗ bấm, chỗ khó hiểu; 3) hỏi đúng 3 câu: “Điều gì khó hiểu nhất?”, “Kết quả này có tin không?”, “Bạn có dùng thật không?”. Mỗi người thử được log thành 1 dòng trong `validation/`.
 - Multi-prototype (nếu làm): hai phương án sẽ được thử trước khi chốt: (1) trả lời ngay khi có slide context, (2) hỏi trước “bạn muốn tóm tắt hay giải thích?” trước khi trả lời. Chọn phương án 1 vì ít gây friction và khớp trực tiếp với pain trong mining log.
 
 ## §9. Changelog
@@ -103,3 +109,6 @@ Loại: [x] Tối ưu tính năng có sẵn  [ ] Tính năng mới
 |---|---|---|
 | 2026-07-31 | Hoàn thiện spec cho feature “slide-aware VLearn Tutor” | Dựa trên bằng chứng mining log và hiện trạng code trong repo |
 | 2026-07-31 | Chốt automation ở mức conditional | Vì sai có thể làm học viên hiểu sai kiến thức, nên cần đường lui rõ |
+| 2026-07-31 | Chốt không hỗ trợ đọc biểu đồ ảnh/vùng khoanh annotation | Run 01 cho thấy request không gửi ảnh/crop/toạ độ; GS10 và GS16 chuyển sang kiểm tra graceful failure |
+| 2026-07-31 | Ghi nhận Run 01 chưa đạt quality bar | `eval/run-01.csv`: 14/20 pass, 4 fail, 2 case chưa chạy đúng fixture; cần guardrail Day 2 và vùng khoanh trước Run 02 |
+| 2026-07-31 | Hoàn thành validation CP5 với 5 học viên ngoài nhóm | `validation/feedback-log.md`: 3 willing user và 2 feedback cao xác nhận cần guardrail Day 2 cùng thông báo rõ giới hạn vùng khoanh |

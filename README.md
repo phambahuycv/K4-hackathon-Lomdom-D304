@@ -4,6 +4,18 @@
 API AI Tutor bằng FastAPI trong `backend/`. Giao diện Next.js thử nghiệm cũ đã
 được loại bỏ để repo chỉ còn một luồng chạy chính.
 
+## Nhóm 04 · Zone A
+
+| Mã HV | Thành viên | Vai trò | Phụ trách chính |
+|---|---|---|---|
+| 2A202601132 | Phạm Bá Huy | Product Manager | Product scope, spec, impact, validation, slide và checkpoint |
+| 2A202601310 | Trần Văn Đông | Backend Engineer | FastAPI, Gemini environment, API tutor và guardrail tài liệu |
+| 2A202601428 | Hoàng Văn Thành | Frontend Engineer | PDF viewer, current-page context, selection và điều hướng UI |
+| 2A202601820 | Bùi Đức Hiếu | AI Engineer | Prompt, intent classification, Gemini response và groundedness guardrail |
+| 2A202601482 | Lăng Nhật Minh | Data & QA | Mining evidence, golden set, eval, quality bar và failure analysis |
+
+> Điền mã HV trước khi nộp CP6.
+
 ## Cài đặt và chạy
 
 ```powershell
