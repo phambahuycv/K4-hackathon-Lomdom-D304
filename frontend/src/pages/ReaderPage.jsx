@@ -36,6 +36,11 @@ export default function ReaderPage() {
   // Bôi đen văn bản slide (Text selection state)
   const [selectedText, setSelectedText] = useState('');
 
+  // Tool selection state
+  const [activeTool, setActiveTool] = useState('select'); // 'select' | 'pen' | 'highlight'
+  const [redHighlightInfo, setRedHighlightInfo] = useState(null);
+  const [clearTrigger, setClearTrigger] = useState(0);
+
   // Chat states
   const [chatInput, setChatInput] = useState('');
   const [isAiThinking, setIsAiThinking] = useState(false);
@@ -125,10 +130,13 @@ export default function ReaderPage() {
       rawQuery = 'Giải thích đoạn văn bản này giúp mình.';
     }
 
-    // Đóng gói câu hỏi kèm văn bản bôi đen theo chuẩn dataset VLearn
+    // Đóng gói câu hỏi kèm văn bản bôi đen hoặc vùng bôi đỏ theo chuẩn dataset VLearn
     let fullPromptWithSelection = rawQuery;
     if (selectedText) {
       fullPromptWithSelection = `(Trang ${currentPage}, đoạn được chọn: "${selectedText}")\n${rawQuery}`;
+    } else if (redHighlightInfo?.hasRedHighlight || activeTool === 'pen') {
+      const redPage = redHighlightInfo?.pageNum || currentPage;
+      fullPromptWithSelection = `(Vùng bôi đỏ/khoanh đỏ tại Trang ${redPage})\n${rawQuery}`;
     }
 
     const userMsg = {
@@ -597,14 +605,84 @@ export default function ReaderPage() {
             }}>
               {/* Group 1: Tools */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <button style={{ backgroundColor: '#f1f5f9', border: '1px solid #cbd5e1', borderRadius: '18px', padding: '5px 14px', fontSize: '13.5px', fontWeight: 600, color: '#0284c7', display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}>
+                <button
+                  onClick={() => setActiveTool('select')}
+                  style={{
+                    backgroundColor: activeTool === 'select' ? '#f1f5f9' : '#ffffff',
+                    border: `1px solid ${activeTool === 'select' ? '#cbd5e1' : '#e2e8f0'}`,
+                    borderRadius: '18px',
+                    padding: '5px 14px',
+                    fontSize: '13.5px',
+                    fontWeight: activeTool === 'select' ? 700 : 500,
+                    color: activeTool === 'select' ? '#0284c7' : '#64748b',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '5px',
+                    cursor: 'pointer'
+                  }}
+                >
                   📌 Đọc (Bôi đen)
                 </button>
-                <button style={{ backgroundColor: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '5px 14px', fontSize: '13.5px', color: '#64748b', display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}>
-                  ✏️ Bút
+
+                <button
+                  onClick={() => setActiveTool('pen')}
+                  style={{
+                    backgroundColor: activeTool === 'pen' ? '#fef2f2' : '#ffffff',
+                    border: `1px solid ${activeTool === 'pen' ? '#fca5a5' : '#e2e8f0'}`,
+                    borderRadius: '18px',
+                    padding: '5px 14px',
+                    fontSize: '13.5px',
+                    fontWeight: activeTool === 'pen' ? 700 : 500,
+                    color: activeTool === 'pen' ? '#dc2626' : '#64748b',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '5px',
+                    cursor: 'pointer'
+                  }}
+                >
+                  ✏️ Bút (Bôi đỏ)
                 </button>
-                <button style={{ backgroundColor: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '18px', padding: '5px 14px', fontSize: '13.5px', color: '#64748b', display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer' }}>
+
+                <button
+                  onClick={() => setActiveTool('highlight')}
+                  style={{
+                    backgroundColor: activeTool === 'highlight' ? '#fef9c3' : '#ffffff',
+                    border: `1px solid ${activeTool === 'highlight' ? '#fde047' : '#e2e8f0'}`,
+                    borderRadius: '18px',
+                    padding: '5px 14px',
+                    fontSize: '13.5px',
+                    fontWeight: activeTool === 'highlight' ? 700 : 500,
+                    color: activeTool === 'highlight' ? '#854d0e' : '#64748b',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '5px',
+                    cursor: 'pointer'
+                  }}
+                >
                   🖍️ Highlight
+                </button>
+
+                <button
+                  onClick={() => {
+                    setClearTrigger(prev => prev + 1);
+                    setRedHighlightInfo(null);
+                  }}
+                  style={{
+                    backgroundColor: '#ffffff',
+                    border: '1px solid #e2e8f0',
+                    borderRadius: '18px',
+                    padding: '5px 14px',
+                    fontSize: '13.5px',
+                    fontWeight: 500,
+                    color: '#dc2626',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '5px',
+                    cursor: 'pointer'
+                  }}
+                  title="Xóa tất cả nét bôi đỏ trên slide"
+                >
+                  🧹 Tẩy (Xóa bôi đỏ)
                 </button>
                 <button style={{ border: 'none', background: 'none', color: '#94a3b8', fontSize: '13.5px', cursor: 'pointer', padding: '0 4px' }}>...</button>
               </div>
@@ -641,6 +719,8 @@ export default function ReaderPage() {
               key={currentFileData.id}
               pdfUrl={currentFileData.pdfUrl}
               zoomLevel={zoomLevel}
+              activeTool={activeTool}
+              clearTrigger={clearTrigger}
               onPdfLoaded={({ numPages, pdfTextMap }) => {
                 setTotalPages(numPages);
                 setPdfTextMap(pdfTextMap);
@@ -650,6 +730,9 @@ export default function ReaderPage() {
               }}
               onTextSelected={(text) => {
                 setSelectedText(text);
+              }}
+              onRedHighlightDrawn={(info) => {
+                setRedHighlightInfo(info);
               }}
             />
           </div>

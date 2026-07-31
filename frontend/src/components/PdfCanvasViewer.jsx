@@ -12,9 +12,12 @@ export default function PdfCanvasViewer({
   pdfUrl, 
   zoomLevel = 100, 
   watermarkText = '26AI.HIEUBD@VINUNI.EDU.VN',
+  activeTool = 'select',
+  clearTrigger = 0,
   onPdfLoaded,
   onPageVisible,
-  onTextSelected
+  onTextSelected,
+  onRedHighlightDrawn
 }) {
   const containerRef = useRef(null);
   const scrollContainerRef = useRef(null);
@@ -157,6 +160,83 @@ export default function PdfCanvasViewer({
             pageWrapper.appendChild(watermark);
           }
 
+          // Canvas Bút Bôi đỏ Overlay Layer (Bôi đỏ hiển thị rõ nét z-index 25, không che phủ nội dung)
+          const drawCanvas = document.createElement('canvas');
+          drawCanvas.className = 'pen-drawing-overlay';
+          drawCanvas.height = viewport.height;
+          drawCanvas.width = viewport.width;
+          drawCanvas.style.position = 'absolute';
+          drawCanvas.style.left = '0';
+          drawCanvas.style.top = '0';
+          drawCanvas.style.width = '100%';
+          drawCanvas.style.height = '100%';
+          drawCanvas.style.borderRadius = '16px';
+          drawCanvas.style.pointerEvents = activeTool === 'pen' ? 'auto' : 'none';
+          drawCanvas.style.zIndex = '25';
+          pageWrapper.appendChild(drawCanvas);
+
+          let isDrawing = false;
+          let points = [];
+          const drawCtx = drawCanvas.getContext('2d');
+
+          drawCanvas.addEventListener('mousedown', (e) => {
+            if (activeTool !== 'pen') return;
+            isDrawing = true;
+            const rect = drawCanvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            points = [{ x, y }];
+          });
+
+          drawCanvas.addEventListener('mousemove', (e) => {
+            if (!isDrawing || activeTool !== 'pen') return;
+            const rect = drawCanvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            points.push({ x, y });
+
+            drawCtx.clearRect(0, 0, drawCanvas.width, drawCanvas.height);
+            if (points.length > 1) {
+              drawCtx.lineWidth = 4;
+              drawCtx.lineCap = 'round';
+              drawCtx.lineJoin = 'round';
+              drawCtx.strokeStyle = '#dc2626';
+              drawCtx.fillStyle = 'rgba(239, 68, 68, 0.28)';
+
+              drawCtx.beginPath();
+              drawCtx.moveTo(points[0].x, points[0].y);
+              for (let i = 1; i < points.length; i++) {
+                drawCtx.lineTo(points[i].x, points[i].y);
+              }
+              drawCtx.stroke();
+
+              let minX = points[0].x, maxX = points[0].x;
+              let minY = points[0].y, maxY = points[0].y;
+              points.forEach(p => {
+                minX = Math.min(minX, p.x);
+                maxX = Math.max(maxX, p.x);
+                minY = Math.min(minY, p.y);
+                maxY = Math.max(maxY, p.y);
+              });
+
+              drawCtx.fillRect(minX, minY, Math.max(10, maxX - minX), Math.max(10, maxY - minY));
+              drawCtx.strokeRect(minX, minY, Math.max(10, maxX - minX), Math.max(10, maxY - minY));
+            }
+          });
+
+          drawCanvas.addEventListener('mouseup', () => {
+            if (isDrawing && activeTool === 'pen') {
+              isDrawing = false;
+              if (onRedHighlightDrawn) {
+                onRedHighlightDrawn({
+                  pageNum: pageNum,
+                  hasRedHighlight: true,
+                  redText: extractedTextMap[pageNum] || `Vùng bôi đỏ biểu đồ/văn bản tại Trang ${pageNum}`
+                });
+              }
+            }
+          });
+
           if (container && isMounted) {
             container.appendChild(pageWrapper);
             setRenderedCount(pageNum);
@@ -244,6 +324,19 @@ export default function PdfCanvasViewer({
       }
     };
   }, [onTextSelected]);
+
+  // Lắng nghe tín hiệu xóa tất cả nét bôi đỏ
+  useEffect(() => {
+    if (clearTrigger > 0 && containerRef.current) {
+      const overlays = containerRef.current.querySelectorAll('.pen-drawing-overlay');
+      overlays.forEach(c => {
+        const ctx = c.getContext('2d');
+        if (ctx) {
+          ctx.clearRect(0, 0, c.width, c.height);
+        }
+      });
+    }
+  }, [clearTrigger]);
 
   return (
     <div 
