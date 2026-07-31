@@ -11,6 +11,7 @@
 - Mình viết `eval/scoring-rubric.md` để định nghĩa groundedness, hoàn thành task, an toàn/tin cậy và quality bar cho lượt đo đầu.
 - Mình test tay flow AI thật và ghi nhận các hành vi cần tiếp tục kiểm thử, đặc biệt là việc hỏi Day 2 khi context đang là Day 1 và các câu hỏi về vùng khoanh trên slide.
 - Mình tổng hợp trace test tay thành `eval/run-01.csv` và `eval/run-01.md`. Lượt đo đầu có 14/20 case pass theo toàn bộ golden set, 4 case fail và 2 case chưa chạy đúng fixture; vì vậy mình ghi nhận trung thực là chưa đạt quality bar thay vì loại bỏ các case fail.
+- Ở CP5, mình phối hợp tổng hợp validation từ 5 học viên ngoài nhóm, trong đó có 3 willing user đã khai từ CP1. Mình ghi nhận feedback nguyên văn, phân loại mức độ và viết `validation/summary.md` để chuyển feedback thành thay đổi trước demo và backlog.
 
 ## 3. AI hỗ trợ thế nào
 - Mình dùng AI để hỗ trợ rà soát các pattern trong chatlog, nhóm các kiểu failure và draft cấu trúc golden set/rubric.
