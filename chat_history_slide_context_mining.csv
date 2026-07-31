@@ -1,0 +1,493 @@
+conversation_id,user_id,day_code,conversation_mode,turn_id,turn_status,message_id,role,content,move_used,citations,misconceptions,follow_ups,rating,asked_check_question,message_created_at,llm_call_count,models_used,total_input_tokens,total_output_tokens,total_cost_usd,avg_latency_ms
+C0001,U0067,Lecture_material_ms2044ey_k6uor3,in_class,T0649,completed,M1149,student,"(Trang 37, đoạn được chọn: ""tóm tắt nội dung chính trong slide này"")
+tóm tắt nội dung chính trong slide này",,,,,,False,2026-07-28 04:45:23.227929+00:00,3,gemini-3.1-flash-lite,7533,47,0.000000,1400
+C0001,U0067,Lecture_material_ms2044ey_k6uor3,in_class,T0649,completed,M1637,tutor,"Xin lỗi bạn, tôi không tìm thấy nội dung cụ thể cho slide 37 trong tài liệu hiện có. Bạn có thể cung cấp thêm thông tin hoặc tiêu đề của slide đó để tôi có thể hỗ trợ bạn chính xác hơn không?",review_concept,[],[],[],,False,2026-07-28 04:45:23.227929+00:00,3,gemini-3.1-flash-lite,7533,47,0.000000,1400
+C0002,U0031,Lecture_material_ms4x7dx1_t0qyxg,in_class,T0905,completed,M0645,tutor,"Chào bạn, hiện tại tôi không tìm thấy tài liệu tổng hợp đầy đủ cho toàn bộ nội dung của Ngày 04 trong slide được cung cấp.
+
+Nếu bạn có thắc mắc về một khái niệm cụ thể nào đó đã học trong buổi này (ví dụ: các kỹ thuật tối ưu hóa prompt, cơ chế gọi tool của agent, hoặc cách xử lý ngữ cảnh), hãy cho tôi biết tên khái niệm hoặc đoạn văn bản cụ thể mà bạn muốn tìm hiểu. Tôi sẽ tra cứu chi tiết và giải thích giúp bạn ngay nhé.",review_concept,[],[],[],,False,2026-07-29 03:53:40.416775+00:00,3,gemini-3.1-flash-lite,8211,106,0.000000,1538
+C0002,U0031,Lecture_material_ms4x7dx1_t0qyxg,in_class,T0905,completed,M2275,student,"(Trang 50, đoạn được chọn: ""tóm gọn những nội dung quan trọng nhất trong day 04 này"")
+tóm gọn những nội dung quan trọng nhất trong day 04 này",,,,,,False,2026-07-29 03:53:40.416775+00:00,3,gemini-3.1-flash-lite,8211,106,0.000000,1538
+C0004,U0100,Lecture_material_ms203vsq_ob7vqp,in_class,T0154,completed,M1689,student,"(Trang 25, đoạn được chọn: ""tại sao có lưu ý như trang 25"")
+tại sao có lưu ý như trang 25",,,,,,False,2026-07-27 04:15:28.689090+00:00,3,gemini-3.1-flash-lite,7743,94,0.000000,1469
+C0004,U0100,Lecture_material_ms203vsq_ob7vqp,in_class,T0154,completed,M2380,tutor,"Rất tiếc, mình đã kiểm tra lại các tài liệu của bài học hôm nay nhưng không thấy trang 25 đề cập đến lưu ý nào như bạn mô tả. Có thể thông tin này nằm trong một tài liệu khác hoặc mình chưa tìm thấy đúng phần nội dung bạn đang quan tâm.
+
+Bạn có thể vui lòng cung cấp thêm ngữ cảnh hoặc nội dung cụ thể của lưu ý đó không? Mình sẽ hỗ trợ giải đáp ngay khi có thông tin chi tiết.",review_concept,[],[],[],,False,2026-07-27 04:15:28.689090+00:00,3,gemini-3.1-flash-lite,7743,94,0.000000,1469
+C0015,U0329,Lecture_material_ms4ahenz_7cpqa2,in_class,T0541,completed,M0618,tutor,"Rất tiếc, hiện tại trong nội dung slide bài giảng của ngày hôm nay không chứa thông tin chi tiết về khái niệm ""ReAct Design Pattern"" hay một bản tóm tắt tổng quát về toàn bộ các slide.
+
+Để tôi có thể hỗ trợ bạn hiệu quả nhất, bạn có thể chia sẻ cụ thể hơn về các chủ đề hoặc các từ khóa quan trọng mà bạn muốn tóm tắt trong bài học hôm nay không? Tôi sẽ dựa vào nội dung đó để giải thích và tổng hợp giúp bạn.",review_concept,[],[],[],,False,2026-07-28 07:08:59.746080+00:00,4,gemini-3.1-flash-lite,10537,102,0.000000,1512
+C0015,U0329,Lecture_material_ms4ahenz_7cpqa2,in_class,T0541,completed,M2214,student,"(Trang 2, đoạn được chọn: ""Giúp tôi viết summary chi tiết và đầy đủ nhất về toàn bộ slide bài giảng ngày hôm nay"")
+Giúp tôi viết summary chi tiết và đầy đủ nhất về toàn bộ slide bài giảng ngày hôm nay",,,,,,False,2026-07-28 07:08:59.746080+00:00,4,gemini-3.1-flash-lite,10537,102,0.000000,1512
+C0020,U0176,New learning material,in_class,T0122,completed,M2504,student,"(Trang 5, đoạn được chọn: ""tóm tắt hết slice trong vài câu đi"")
+tóm tắt hết slice trong vài câu đi",,,,,,False,2026-07-23 07:26:22.851588+00:00,6,gemini-3-flash,23972,148,0.000000,5503
+C0020,U0176,New learning material,in_class,T0122,completed,M1445,tutor,"Rất tiếc là mình đã thử tìm kiếm nội dung tổng quan từ các slide (với các từ khóa như ""giới thiệu"", ""mục tiêu"", ""tóm tắt"") nhưng hệ thống chưa trả về kết quả cụ thể để mình có thể khái quát lại toàn bộ bài học cho bạn.
+
+Vì mình không có quyền truy cập trực tiếp vào toàn bộ tệp tài liệu mà phải thông qua tìm kiếm từ khóa, bạn có thể giúp mình bằng cách:
+1. Cho mình biết **chủ đề chính** của buổi học hôm nay là gì (ví dụ: Giới thiệu về AI, Tìm kiếm theo chiều sâu, v.v.)?
+2. Hoặc bạn có thể chụp/chép một đoạn nội dung quan trọng nào đó, mình sẽ dựa vào đó để tra cứu và tóm tắt giúp bạn ngay!",give_direct_answer,[],[],[],,False,2026-07-23 07:26:22.851588+00:00,6,gemini-3-flash,23972,148,0.000000,5503
+C0021,U0355,Lecture_material_ms204i6x_gqwyya,in_class,T0769,completed,M0419,tutor,"Chào bạn, rất xin lỗi vì hiện tại hệ thống tìm kiếm không tìm thấy nội dung cụ thể cho trang 4 trong tài liệu của bài học hôm nay. Bạn có thể vui lòng cung cấp nội dung hoặc tiêu đề của trang 4 đó để mình hỗ trợ giải thích rõ hơn cho bạn không?",review_concept,[],[],[],down,False,2026-07-29 02:20:45.120100+00:00,3,gemini-3.1-flash-lite,7527,61,0.000000,1436
+C0021,U0355,Lecture_material_ms204i6x_gqwyya,in_class,T0769,completed,M0060,student,"(Trang 4, đoạn được chọn: ""giải thích nghĩa chi tiết của trang 4"")
+giải thích nghĩa chi tiết của trang 4",,,,,,False,2026-07-29 02:20:45.120100+00:00,3,gemini-3.1-flash-lite,7527,61,0.000000,1436
+C0023,U0257,New learning material,in_class,T0399,completed,M1331,student,"(Trang 6, đoạn được chọn: ""Giải thích biều đồ đc bôi đỏ"")
+Giải thích biều đồ đc bôi đỏ",,,,,,False,2026-07-23 07:24:22.988957+00:00,6,gemini-3-flash,25192,147,0.000000,6884
+C0023,U0257,New learning material,in_class,T0399,completed,M2317,tutor,"Rất tiếc, tôi đã thực hiện tra cứu trong các slide bài giảng nhưng hiện tại không tìm thấy thông tin cụ thể về ""biểu đồ được bôi đỏ"" trên trang 6 trong dữ liệu được cung cấp. Kết quả tra cứu trang 6 hiện đang trả về nội dung của trang 71, đề cập đến việc so sánh phong cách trả lời của ba mô hình Claude, GPT và một mô hình khác dựa trên cùng một prompt [trang 71].
+
+Nếu biểu đồ bạn đang đề cập liên quan đến các số liệu tài chính hoặc so sánh hiệu năng giữa các mô hình, bạn có thể mô tả thêm các thông số hoặc tiêu đề trên biểu đồ đó để tôi có thể hỗ trợ giải thích chính xác nhất cho bạn.",give_direct_answer,[71],[],[],,False,2026-07-23 07:24:22.988957+00:00,6,gemini-3-flash,25192,147,0.000000,6884
+C0031,U0168,Lecture_material_ms5r18w1_oe5xlz,in_class,T0408,completed,M1124,tutor,"Rất tiếc, tôi không thể tìm thấy tệp tin hoặc nội dung chi tiết của `day05-lecture-slides-batch03.pdf` trong hệ thống hiện tại để tóm tắt các chủ đề chính cho bạn.
+
+Bạn có thể cung cấp thêm thông tin hoặc tên cụ thể của chủ đề/khái niệm bạn đang muốn tìm hiểu trong ngày học này không? Tôi sẽ hỗ trợ bạn giải đáp ngay khi có nội dung cụ thể.",review_concept,[],[],[],down,False,2026-07-29 08:42:53.638447+00:00,3,gemini-3.1-flash-lite,7572,85,0.000000,1667
+C0031,U0168,Lecture_material_ms5r18w1_oe5xlz,in_class,T0408,completed,M2134,student,"(Trang 14, đoạn được chọn: ""tóm tắt các chủ đề chính của slide day05-lecture-slides-batch03.pdf này"")
+tóm tắt các chủ đề chính của slide day05-lecture-slides-batch03.pdf này",,,,,,False,2026-07-29 08:42:53.638447+00:00,3,gemini-3.1-flash-lite,7572,85,0.000000,1667
+C0038,U0234,Lecture_material_ms4ahenz_7cpqa2,in_class,T1233,completed,M1734,student,"(Trang 26, đoạn được chọn: ""lấy văn bản trong trang 26 cho tôi"")
+lấy văn bản trong trang 26 cho tôi",,,,,,False,2026-07-28 09:05:49.343090+00:00,3,gemini-3.1-flash-lite,7524,81,0.000000,1640
+C0038,U0234,Lecture_material_ms4ahenz_7cpqa2,in_class,T1233,completed,M1959,tutor,"Rất xin lỗi bạn, hệ thống hiện không tìm thấy nội dung văn bản cụ thể tại trang 26 trong tài liệu của bài giảng hôm nay. Bạn có thể cho mình biết thêm về khái niệm hoặc chủ đề bạn đang muốn tìm hiểu trong bài học về Prompt Engineering và Tool Calling không? Mình sẽ hỗ trợ bạn tìm kiếm và giải thích dựa trên nội dung có sẵn.",review_concept,[],[],[],,False,2026-07-28 09:05:49.343090+00:00,3,gemini-3.1-flash-lite,7524,81,0.000000,1640
+C0053,U0254,Lecture_material_ms203vsq_ob7vqp,in_class,T0436,completed,M1933,tutor,"Rất tiếc, hệ thống không tìm thấy nội dung cụ thể cho slide 35 trong tài liệu của ngày học này. Bạn có thể cung cấp thêm tiêu đề của slide hoặc nội dung chính mà bạn đang thắc mắc không? Tôi sẽ hỗ trợ bạn giải thích ngay khi có thông tin đó.",review_concept,[],[],[],,False,2026-07-27 05:19:29.311432+00:00,3,gemini-3.1-flash-lite,7749,60,0.000000,1494
+C0053,U0254,Lecture_material_ms203vsq_ob7vqp,in_class,T0436,completed,M0286,student,"(Trang 35, đoạn được chọn: ""Giải thích slide 35"")
+Giải thích slide 35",,,,,,False,2026-07-27 05:19:29.311432+00:00,3,gemini-3.1-flash-lite,7749,60,0.000000,1494
+C0055,U0135,Lecture_material_ms2044ey_k6uor3,in_class,T0213,completed,M0949,tutor,"Chào bạn, rất tiếc là hệ thống hiện không thể tự động tổng hợp toàn bộ nội dung của tất cả các slide trong một lần.
+
+Bạn có thể cho mình biết cụ thể hơn bạn đang quan tâm đến phần nào trong chủ đề từ ""Chatbot đến Agentic Agent & ReAct"" không? Ví dụ, bạn muốn tìm hiểu về khái niệm Agent, quy trình suy luận (reasoning) hay cách thức hoạt động của ReAct? Mình sẽ hỗ trợ giải đáp chi tiết các phần đó cho bạn.",review_concept,[],[],[],,False,2026-07-27 09:31:56.109140+00:00,3,gemini-3.1-flash-lite,7503,101,0.000000,1602
+C0055,U0135,Lecture_material_ms2044ey_k6uor3,in_class,T0213,completed,M0325,student,"(Trang 6, đoạn được chọn: ""tóm tắt tất cả slide"")
+tóm tắt tất cả slide",,,,,,False,2026-07-27 09:31:56.109140+00:00,3,gemini-3.1-flash-lite,7503,101,0.000000,1602
+C0057,U0365,New learning material,in_class,T0415,completed,M1143,tutor,"Rất tiếc, tôi không tìm thấy nội dung cụ thể tại trang 70 trong tài liệu của ngày học này. Bạn có thể cung cấp thêm ngữ cảnh hoặc tên chủ đề bạn đang quan tâm không? Tôi sẽ dựa vào đó để hỗ trợ bạn tóm tắt và xác định các từ khóa quan trọng.",review_concept,[],[],[],,False,2026-07-23 10:47:42.441797+00:00,5,gemini-3.1-flash-lite,19981,60,0.000000,1610
+C0057,U0365,New learning material,in_class,T0415,completed,M1830,student,"(Trang 70, đoạn được chọn: ""tóm tắt nội dung, đưa ra keyword cần nhớ"")
+tóm tắt nội dung, đưa ra keyword cần nhớ",,,,,,False,2026-07-23 10:47:42.441797+00:00,5,gemini-3.1-flash-lite,19981,60,0.000000,1610
+C0058,U0128,New learning material,in_class,T0286,completed,M0903,student,"(Trang 7, đoạn được chọn: ""Tóm tắt sờ lai này"")
+Tóm tắt sờ lai này",,,,,,False,2026-07-24 02:09:47.203342+00:00,4,gemini-3.1-flash-lite,15917,53,0.000000,1786
+C0058,U0128,New learning material,in_class,T0286,completed,M0576,tutor,"Rất tiếc, tôi không tìm thấy nội dung cụ thể cho trang 7 trong tài liệu được cung cấp. Bạn có thể cho tôi biết tiêu đề hoặc các khái niệm chính trong phần đó không? Tôi sẽ hỗ trợ bạn tóm tắt ngay khi có thông tin.",review_concept,[],[],[],,False,2026-07-24 02:09:47.203342+00:00,4,gemini-3.1-flash-lite,15917,53,0.000000,1786
+C0064,U0207,Lecture_material_ms204i6x_gqwyya,in_class,T0523,completed,M1621,tutor,"Rất xin lỗi, mình không tìm thấy nội dung cụ thể cho trang 9 trong tài liệu hiện tại. Bạn có thể cho mình biết thêm tên chương hoặc chủ đề chính trên trang đó để mình hỗ trợ bạn tốt hơn không?",review_concept,[],[],[],,False,2026-07-28 07:40:02.769127+00:00,3,gemini-3.1-flash-lite,7647,48,0.000000,1395
+C0064,U0207,Lecture_material_ms204i6x_gqwyya,in_class,T0523,completed,M0440,student,"(Trang 9, đoạn được chọn: ""Tóm tắt slide này"")
+Tóm tắt slide này",,,,,,False,2026-07-28 07:40:02.769127+00:00,3,gemini-3.1-flash-lite,7647,48,0.000000,1395
+C0075,U0281,Lecture_material_ms5rpr5o_wgl8wy,in_class,T0739,completed,M1279,tutor,"Chào bạn! Hiện tại trong hệ thống slide bài giảng cho ngày học hôm nay (day05-slide-batch03-C401) không có một trang tổng kết cụ thể các điểm chính.
+
+Để mình có thể hỗ trợ bạn tốt nhất, bạn có thể cho mình biết bạn đang quan tâm đến chủ đề hoặc khái niệm cụ thể nào trong bài học này không? Mình sẽ giúp bạn giải thích và làm rõ các nội dung đó.",review_concept,[],[],[],,False,2026-07-29 08:51:09.306985+00:00,3,gemini-3.1-flash-lite,7530,86,0.000000,1388
+C0075,U0281,Lecture_material_ms5rpr5o_wgl8wy,in_class,T0739,completed,M1814,student,"(Trang 17, đoạn được chọn: ""tóm tắt các điểm chính trong bài học hôm nay"")
+tóm tắt các điểm chính trong bài học hôm nay",,,,,,False,2026-07-29 08:51:09.306985+00:00,3,gemini-3.1-flash-lite,7530,86,0.000000,1388
+C0076,U0056,New learning material,in_class,T1258,completed,M0780,tutor,"Rất tiếc là tôi đã tra cứu trong tài liệu nhưng chưa tìm thấy nội dung cụ thể của **Trang 33**. Kết quả tìm kiếm chỉ hiển thị các trang khác có nhắc đến con số ""33"" (như mức điểm 33% trong các bài kiểm tra đánh giá AI trên trang 60 và 72).
+
+Bạn có thể cho tôi biết tiêu đề của slide đó hoặc một vài từ khóa có trên trang để tôi tìm kiếm lại chính xác hơn không?",give_direct_answer,[],[],[],down,False,2026-07-23 07:44:16.951567+00:00,6,gemini-3-flash,25354,90,0.000000,5018
+C0076,U0056,New learning material,in_class,T1258,completed,M2065,student,"(Trang 33, đoạn được chọn: ""tóm tắt slide này"")
+tóm tắt slide này",,,,,,False,2026-07-23 07:44:16.951567+00:00,6,gemini-3-flash,25354,90,0.000000,5018
+C0079,U0298,New learning material,in_class,T0168,completed,M1153,student,"(Trang 11, đoạn được chọn: ""day01-slide-blue-v1.pdf"")
+Giải thích đoạn bôi đen ở Trang 11.",,,,,,False,2026-07-23 08:07:44.004018+00:00,7,gemini-3-flash,28030,89,0.000000,4103
+C0079,U0298,New learning material,in_class,T0168,completed,M0813,tutor,"Rất tiếc, mình đã thử tra cứu nội dung ở Trang 11 của slide ""day01-slide-blue-v1.pdf"" nhưng không tìm thấy đoạn văn bản cụ thể nào trong hệ thống dữ liệu hiện tại.
+
+Để mình có thể hỗ trợ bạn tốt nhất, bạn vui lòng trích dẫn một vài dòng hoặc cung cấp các từ khóa chính có trong đoạn bôi đen đó được không? Mình sẽ giải thích chi tiết ngay khi có thông tin.",give_direct_answer,[],[],[],,False,2026-07-23 08:07:44.004018+00:00,7,gemini-3-flash,28030,89,0.000000,4103
+C0094,U0099,Lecture_material_ms204v3b_r9mo78,in_class,T1164,completed,M1080,tutor,"Chào bạn, rất tiếc là hệ thống hiện không thể truy xuất tóm tắt tổng thể cho toàn bộ tài liệu 44 trang cùng một lúc.
+
+Để hỗ trợ bạn tốt nhất, bạn có thể cho mình biết cụ thể chủ đề hoặc khái niệm nào trong bài ""AI Product Thinking & Requirements"" mà bạn đang muốn tìm hiểu không? Ví dụ, bạn đang quan tâm đến cách xác định bài toán cho sản phẩm AI, cách viết yêu cầu (requirements) hay quy trình phát triển sản phẩm AI? Mình sẽ giúp bạn giải thích chi tiết và trích dẫn thông tin từ các trang slide tương ứng.",review_concept,[],[],[],,False,2026-07-29 17:00:54.271078+00:00,3,gemini-3.1-flash-lite,7746,127,0.000000,1633
+C0094,U0099,Lecture_material_ms204v3b_r9mo78,in_class,T1164,completed,M0330,student,"(Trang 25, đoạn được chọn: ""Trang 1
+Kéo đến trang này để mở note riêng của trang.
+Trang 2 / 44
+day05-ai-product-thinking-requirements.pdf
+Trang 2
+Kéo đến trang này để mở note riêng của trang.
+Trang 3 / 44
+day05-ai-product-thinking-requirements.pdf
+Trang 3
+Kéo đến trang này để mở note riêng của trang.
+Trang 4 / 44
+day05-ai-prod"")
+tóm tắt cho t tất cả từ trang 1 đến trang 44 bài này học về gì",,,,,,False,2026-07-29 17:00:54.271078+00:00,3,gemini-3.1-flash-lite,7746,127,0.000000,1633
+C0104,U0066,New learning material,in_class,T0018,completed,M1388,tutor,"Rất tiếc là mình không tìm thấy nội dung cụ thể của trang 54 trong các slide hiện có để trả lời chính xác đoạn bạn đã chọn.
+
+Tuy nhiên, dựa trên nội dung bài học về bản chất của chatbot và mô hình ngôn ngữ lớn (LLM) ở các trang khác, có thể bạn đang quan tâm đến khái niệm **Token** hoặc **Next-token prediction**. Chẳng hạn, ở [trang 78] có giải thích về cơ chế **Streaming** — đó là khi chatbot ""nhả chữ"" từng mảnh (token) ngay khi mô hình vừa sinh ra, giúp chúng ta thấy văn bản hiện ra dần dần thay vì phải đợi toàn bộ câu trả lời hoàn thành [trang 78].
+
+Nếu bạn có thể mô tả rõ hơn hình ảnh hoặc văn bản đi kèm ở trang 54, mình sẽ hỗ trợ bạn chi tiết hơn nhé!",give_direct_answer,[78],[],[],,False,2026-07-23 07:24:28.601234+00:00,6,gemini-3-flash,24548,166,0.000000,5982
+C0104,U0066,New learning material,in_class,T0018,completed,M1966,student,"(Trang 54, đoạn được chọn: ""Đây là gì"")
+Đây là gì",,,,,,False,2026-07-23 07:24:28.601234+00:00,6,gemini-3-flash,24548,166,0.000000,5982
+C0104,U0066,New learning material,in_class,T1154,completed,M1027,student,"(Trang 7, đoạn được chọn: ""Tóm tắt slide này"")
+Tóm tắt slide này",,,,,,False,2026-07-23 08:22:27.053715+00:00,6,gemini-3-flash,26542,206,0.000000,4202
+C0104,U0066,New learning material,in_class,T1154,completed,M1135,tutor,"Rất tiếc là mình không tìm thấy nội dung cụ thể của trang 7 trong các kết quả tìm kiếm để tóm tắt chính xác cho bạn.
+
+Tuy nhiên, dựa trên các slide giới thiệu ở đầu bài học, nội dung hôm nay tập trung vào việc đưa bạn từ ""nghe về AI"" đến ""gọi được AI"" với 4 mục tiêu chính [trang 4]:
+1.  **Hiểu bản chất LLM:** Giải thích cách mô hình ngôn ngữ lớn hoạt động bằng trực giác [trang 4].
+2.  **Các khái niệm kỹ thuật cơ bản:** Nắm được Token, Context (ngữ cảnh), chi phí và độ trễ [trang 4].
+3.  **Thực hành API:** Thực hiện lần gọi API đầu tiên và hiểu cấu trúc của nó [trang 4].
+4.  **Xây dựng sản phẩm:** Tự tạo một chatbot đơn giản có tính năng streaming (phản hồi theo thời gian thực) [trang 4].
+
+Nếu bạn có thể cho mình biết tiêu đề hoặc một vài từ khóa xuất hiện trên trang 7, mình sẽ hỗ trợ bạn tóm tắt chính xác hơn nhé!",give_direct_answer,[4],[],[],,False,2026-07-23 08:22:27.053715+00:00,6,gemini-3-flash,26542,206,0.000000,4202
+C0106,U0117,Lecture_material_ms203vsq_ob7vqp,in_class,T0730,completed,M0497,student,"(Trang 1, đoạn được chọn: ""tóm tắt lại bài giảng cho tôi"")
+tóm tắt lại bài giảng cho tôi ",,,,,,False,2026-07-27 04:26:39.431898+00:00,3,gemini-3.1-flash-lite,7503,65,0.000000,1367
+C0106,U0117,Lecture_material_ms203vsq_ob7vqp,in_class,T0730,completed,M2521,tutor,"Rất tiếc, hiện tại tôi chưa tìm thấy nội dung tóm tắt hoặc tài liệu tổng quát của bài giảng này trong cơ sở dữ liệu. Bạn có thể cho tôi biết chủ đề cụ thể hoặc câu hỏi mà bạn đang quan tâm không? Tôi sẽ dựa vào đó để tra cứu và giải thích chi tiết hơn giúp bạn.",review_concept,[],[],[],,False,2026-07-27 04:26:39.431898+00:00,3,gemini-3.1-flash-lite,7503,65,0.000000,1367
+C0109,U0203,New learning material,in_class,T0789,completed,M0228,tutor,"Rất tiếc, tôi không tìm thấy nội dung cụ thể trong các slide bài giảng liên quan đến yêu cầu tóm tắt kiến thức của bạn. Vui lòng cung cấp thêm thông tin hoặc chủ đề chính mà bạn muốn tôi hỗ trợ tóm tắt từ tài liệu để tôi có thể giúp bạn hiệu quả hơn.",review_concept,[],[],[],,False,2026-07-23 10:52:28.384013+00:00,4,gemini-3.1-flash-lite,15921,62,0.000000,1585
+C0109,U0203,New learning material,in_class,T0789,completed,M2500,student,"(Trang 81, đoạn được chọn: ""ự c"")
+tóm tắt kiến thức cốt lõi của tài liệu ",,,,,,False,2026-07-23 10:52:28.384013+00:00,4,gemini-3.1-flash-lite,15921,62,0.000000,1585
+C0111,U0213,Lecture_material_ms204i6x_gqwyya,in_class,T0345,completed,M1033,student,"(Trang 7, đoạn được chọn: ""tóm tắt slide day 4"")
+tóm tắt slide day 4 ",,,,,,False,2026-07-28 07:23:02.226911+00:00,3,gemini-3.1-flash-lite,7659,72,0.000000,1432
+C0111,U0213,Lecture_material_ms204i6x_gqwyya,in_class,T0345,completed,M2360,tutor,"Rất tiếc, mình hiện chưa có nội dung tóm tắt cụ thể cho toàn bộ ngày học thứ 4 trong hệ thống. Bạn có thể cho mình biết bạn đang quan tâm đến chủ đề nào trong phần Prompt Engineering hoặc Tool Calling không? Nếu bạn có câu hỏi cụ thể hoặc cần làm rõ một khái niệm nào đó, hãy chia sẻ nhé!",review_concept,[],[],[],,False,2026-07-28 07:23:02.226911+00:00,3,gemini-3.1-flash-lite,7659,72,0.000000,1432
+C0113,U0141,Lecture_material_ms5r18w1_oe5xlz,in_class,T0229,completed,M1126,tutor,"Rất xin lỗi bạn, trong bộ tài liệu của ngày học hôm nay, nội dung chỉ kéo dài từ trang 2 đến trang 3 (như bạn đã cung cấp ở các lượt trước). Tôi không tìm thấy thông tin hoặc nội dung cụ thể nào cho trang 4 và trang 5 trong hệ thống dữ liệu được cung cấp.
+
+Nếu bạn có thêm tài liệu hoặc thông tin cụ thể về nội dung của các trang đó, vui lòng chia sẻ thêm để tôi có thể hỗ trợ bạn tóm tắt chính xác nhé!",review_concept,[],[],[],,False,2026-07-29 09:32:41.761965+00:00,5,gemini-3.1-flash-lite,17896,100,0.000000,1417
+C0113,U0141,Lecture_material_ms5r18w1_oe5xlz,in_class,T0229,completed,M1244,student,"(Trang 5, đoạn được chọn: ""tóm tắt trang 4 trang 5"")
+tóm tắt trang 4 trang 5",,,,,,False,2026-07-29 09:32:41.761965+00:00,5,gemini-3.1-flash-lite,17896,100,0.000000,1417
+C0118,U0012,New learning material,in_class,T0716,completed,M1748,tutor,"Rất tiếc là tôi chưa tìm thấy nội dung chi tiết trong slide để tóm tắt chính xác buổi học đầu tiên này cho bạn. Có vẻ như các từ khóa tìm kiếm của tôi chưa khớp với nội dung bài học.
+
+Vì bạn đang ở **Trang 2**, bạn có thể cho tôi biết tiêu đề chính hoặc một vài nội dung quan trọng đang hiển thị trên trang này không? Tôi sẽ dựa vào đó để hỗ trợ bạn tìm hiểu kỹ hơn!",give_direct_answer,[],[],[],,False,2026-07-23 08:08:10.645260+00:00,6,gemini-3-flash,24084,91,0.000000,3989
+C0118,U0012,New learning material,in_class,T0716,completed,M2199,student,"(Trang 2, đoạn được chọn: ""tóm tắt cho tôi buổi học hôm nay - buổi đầu tiên"")
+tóm tắt cho tôi buổi học hôm nay - buổi đầu tiên",,,,,,False,2026-07-23 08:08:10.645260+00:00,6,gemini-3-flash,24084,91,0.000000,3989
+C0118,U0012,New learning material,in_class,T0564,completed,M0460,tutor,"Rất tiếc là tôi đã thử tra cứu qua hệ thống slide nhưng hiện tại kết quả tìm kiếm không hiển thị trực tiếp nội dung của **Trang 2** (hệ thống lại trả về các trang ở cuối bài như trang 61 và 71).
+
+Vì bạn đang xem tài liệu, bạn có thể chia sẻ nhanh tiêu đề hoặc 1-2 ý chính xuất hiện trên Trang 2 được không? Tôi sẽ dựa vào đó để tóm tắt và giải thích chi tiết hơn cho bạn ngay!",give_direct_answer,[],[],[],,False,2026-07-23 08:09:59.648787+00:00,6,gemini-3-flash,26114,94,0.000000,3594
+C0118,U0012,New learning material,in_class,T0564,completed,M0951,student,"(Trang 4, đoạn được chọn: ""tóm tắt cho tôi trang 2"")
+tóm tắt cho tôi trang 2",,,,,,False,2026-07-23 08:09:59.648787+00:00,6,gemini-3-flash,26114,94,0.000000,3594
+C0118,U0012,New learning material,in_class,T0599,completed,M2072,student,"(Trang 3, đoạn được chọn: ""trang 2 nói về cái gì"")
+trang 2 nói về cái gì",,,,,,False,2026-07-23 08:11:53.097292+00:00,6,gemini-3-flash,26786,215,0.000000,4059
+C0118,U0012,New learning material,in_class,T0599,completed,M1866,tutor,"Thật xin lỗi bạn, mình đã thử tra cứu vài lần nhưng hệ thống vẫn chưa trả về nội dung cụ thể của **Trang 2** mà chỉ hiện các trang về cuối bài (như trang 61 hay 71).
+
+Tuy nhiên, dựa trên nội dung ở các trang sau, mình thấy buổi học đầu tiên này tập trung vào **các xu hướng và bước ngoặt của AI hiện nay**. Chẳng hạn như:
+*   **Sự cải tiến về kiến trúc:** Cách model xử lý ngữ cảnh dài hơn (RoPE, GQA/MLA) và hiệu quả hơn (MoE - mô hình ""nhiều chuyên gia"") [trang 61].
+*   **Giới hạn dữ liệu:** Khái niệm ""Data wall"" khi các mô hình đã đọc gần hết văn bản của nhân loại vào khoảng năm 2024 [trang 61].
+*   **So sánh các model:** Cách các dòng model như Claude hay GPT có phong cách trả lời khác nhau cho cùng một prompt [trang 71].
+
+Nếu bạn thấy trên Trang 2 có tiêu đề hoặc một từ khóa nào đó, hãy nhắn cho mình nhé, mình sẽ tra cứu sâu hơn về chủ đề đó cho bạn!",give_direct_answer,"[61, 71]",[],[],,False,2026-07-23 08:11:53.097292+00:00,6,gemini-3-flash,26786,215,0.000000,4059
+C0124,U0254,Lecture_material_ms2lb2ke_c1je8j,in_class,T0760,completed,M0954,tutor,"Rất xin lỗi bạn, có vẻ như hệ thống không tìm thấy nội dung cụ thể ở trang 3 trong tài liệu bài giảng ""Day03-D302-tu-chatbot-den-agentic-agent-react"".
+
+Bạn có thể vui lòng chép lại đoạn văn bản được bôi đen đó vào đây không? Ngay khi có nội dung, tôi sẽ giải thích chi tiết cho bạn dựa trên tài liệu của ngày học.",review_concept,[],[],[],,False,2026-07-28 02:36:47.891980+00:00,3,gemini-3.1-flash-lite,7608,78,0.000000,1508
+C0124,U0254,Lecture_material_ms2lb2ke_c1je8j,in_class,T0760,completed,M1278,student,"(Trang 7, đoạn được chọn: ""Giải thích đoạn bôi đen ở Trang 3: ""Day03-D302-tu-chatbot-den-agentic-agent-react.pdf"""")
+Giải thích đoạn bôi đen ở Trang 3: ""Day03-D302-tu-chatbot-den-agentic-agent-react.pdf""",,,,,,False,2026-07-28 02:36:47.891980+00:00,3,gemini-3.1-flash-lite,7608,78,0.000000,1508
+C0128,U0149,Lecture_material_ms2039d0_hnxpxy,in_class,T0224,completed,M1533,tutor,"Rất tiếc, mình đã tìm kiếm trong các slide bài giảng của ngày hôm nay nhưng không thấy nội dung tóm tắt hoặc danh mục các nội dung chính của bài học. Bạn có thể cho mình biết cụ thể chủ đề bạn đang muốn tìm hiểu không, mình sẽ giúp bạn tra cứu thông tin đó trong tài liệu nhé!",review_concept,[],[],[],,False,2026-07-27 02:52:34.297895+00:00,3,gemini-3.1-flash-lite,9696,69,0.000000,1464
+C0128,U0149,Lecture_material_ms2039d0_hnxpxy,in_class,T0224,completed,M0415,student,"(Trang 1, đoạn được chọn: ""Tom tat ngan gon noi dung chinh cua bai hoc nay"")
+Tom tat ngan gon noi dung chinh cua bai hoc nay",,,,,,False,2026-07-27 02:52:34.297895+00:00,3,gemini-3.1-flash-lite,9696,69,0.000000,1464
+C0132,U0304,Lecture_material_ms203vsq_ob7vqp,in_class,T1109,completed,M2285,student,"(Trang 55, đoạn được chọn: ""Tóm tắt những ý chính trong slide day 2"")
+Tóm tắt những ý chính trong slide day 2",,,,,,False,2026-07-27 04:32:30.089057+00:00,3,gemini-3.1-flash-lite,7518,67,0.000000,1474
+C0132,U0304,Lecture_material_ms203vsq_ob7vqp,in_class,T1109,completed,M2225,tutor,"Chào bạn, hiện tại tôi không tìm thấy tài liệu cụ thể nào được đánh dấu là ""slide day 2"" trong kho dữ liệu của ngày học này. Bạn có thể cung cấp thêm thông tin hoặc nội dung chi tiết mà bạn muốn tóm tắt không? Tôi sẽ rất sẵn lòng hỗ trợ giải thích dựa trên thông tin đó.",review_concept,[],[],[],,False,2026-07-27 04:32:30.089057+00:00,3,gemini-3.1-flash-lite,7518,67,0.000000,1474
+C0134,U0017,day02-c301,in_class,T0932,completed,M0803,student,"(Trang 62, đoạn được chọn: ""tóm tắt cho tôi day02 slide nói về những vấn đề gì, tôi cần chuẩn bị những kiến thức gì cho buổi học này"")
+tóm tắt cho tôi day02 slide nói về những vấn đề gì, tôi cần chuẩn bị những kiến thức gì cho buổi học này ",,,,,,False,2026-07-26 02:30:42.477204+00:00,3,gemini-3.1-flash-lite,7596,99,0.000000,1538
+C0134,U0017,day02-c301,in_class,T0932,completed,M2155,tutor,"Chào bạn, mình là trợ giảng AI của khóa học. Rất xin lỗi bạn, hiện tại mình không thể truy xuất được nội dung cụ thể từ các slide của ""day02-slide-blue"" thông qua hệ thống tra cứu.
+
+Bạn có thể cung cấp thêm thông tin hoặc nội dung chính của các slide này không? Mình sẽ rất sẵn lòng giúp bạn tóm tắt, giải thích các khái niệm hoặc chỉ ra những kiến thức nền tảng cần chuẩn bị dựa trên nội dung đó.",review_concept,[],[],[],,False,2026-07-26 02:30:42.477204+00:00,3,gemini-3.1-flash-lite,7596,99,0.000000,1538
+C0144,U0334,Lecture_material_ms203vsq_ob7vqp,in_class,T0170,completed,M0926,tutor,"Rất xin lỗi bạn, hiện tại tôi không thể truy xuất được tóm tắt tổng thể cho toàn bộ nội dung của buổi học hôm nay từ các slide được cung cấp.
+
+Nếu bạn có thắc mắc về một chủ đề hoặc khái niệm cụ thể nào đã được giảng dạy, hãy cho tôi biết từ khóa hoặc câu hỏi chi tiết, tôi sẽ tra cứu và giải thích giúp bạn ngay nhé.",review_concept,[],[],[],,False,2026-07-27 05:48:34.633840+00:00,4,gemini-3.1-flash-lite,11041,79,0.000000,1584
+C0144,U0334,Lecture_material_ms203vsq_ob7vqp,in_class,T0170,completed,M1446,student,"(Trang 57, đoạn được chọn: ""tóm tắt cho tôi tất cả nội dung của buổi học hôm nay"")
+tóm tắt cho tôi tất cả nội dung của buổi học hôm nay",,,,,,False,2026-07-27 05:48:34.633840+00:00,4,gemini-3.1-flash-lite,11041,79,0.000000,1584
+C0165,U0306,day02-c301,in_class,T0519,completed,M0610,student,"(Trang 46, đoạn được chọn: ""Tóm tắt slide pdf day2 cho tôi"")
+Tóm tắt slide pdf day2 cho tôi ",,,,,,False,2026-07-24 10:27:43.091560+00:00,5,gemini-3.1-flash-lite,19924,64,0.000000,1749
+C0165,U0306,day02-c301,in_class,T0519,completed,M1828,tutor,"Rất tiếc, tôi không thể truy cập trực tiếp vào tệp PDF của buổi học để tóm tắt cho bạn. Nếu bạn có các câu hỏi cụ thể về nội dung, khái niệm hay các thuật ngữ cần giải thích trong bài, hãy đặt câu hỏi và tôi sẽ hỗ trợ bạn tra cứu từ tài liệu được cung cấp.",review_concept,[],[],[],down,False,2026-07-24 10:27:43.091560+00:00,5,gemini-3.1-flash-lite,19924,64,0.000000,1749
+C0182,U0047,Lecture_material_ms5rpr5o_wgl8wy,in_class,T1169,completed,M0152,tutor,"Rất xin lỗi bạn, hiện tại tôi không tìm thấy nội dung cụ thể cho ""slide 5"" trong tài liệu của ngày học này. Bạn có thể cho tôi biết tiêu đề hoặc nội dung chính mà slide đó đề cập đến không? Tôi sẽ dựa trên thông tin đó để giải thích rõ hơn cho bạn.",review_concept,[],[],[],,False,2026-07-29 08:04:45.626474+00:00,3,gemini-3.1-flash-lite,8412,62,0.000000,1467
+C0182,U0047,Lecture_material_ms5rpr5o_wgl8wy,in_class,T1169,completed,M1188,student,"(Trang 5, đoạn được chọn: ""giai thich slide 5"")
+giai thich slide 5 ",,,,,,False,2026-07-29 08:04:45.626474+00:00,3,gemini-3.1-flash-lite,8412,62,0.000000,1467
+C0187,U0354,Lecture_material_ms203vsq_ob7vqp,in_class,T1118,completed,M0469,student,"(Trang 1, đoạn được chọn: ""tóm tắt bài giảng ngày hôm nay"")
+tóm tắt bài giảng ngày hôm nay",,,,,,False,2026-07-27 04:13:32.607117+00:00,3,gemini-3.1-flash-lite,7506,59,0.000000,1357
+C0187,U0354,Lecture_material_ms203vsq_ob7vqp,in_class,T1118,completed,M0489,tutor,"Rất tiếc, hiện tại tôi không tìm thấy tài liệu tóm tắt cụ thể cho bài giảng này trong hệ thống. Bạn có thể cho tôi biết chủ đề chính hoặc những khái niệm cụ thể mà bạn đang muốn tìm hiểu không? Tôi sẽ hỗ trợ giải thích chi tiết cho bạn.",review_concept,[],[],[],,False,2026-07-27 04:13:32.607117+00:00,3,gemini-3.1-flash-lite,7506,59,0.000000,1357
+C0214,U0318,Lecture_material_ms203vsq_ob7vqp,in_class,T1119,completed,M0223,student,"(Trang 13, đoạn được chọn: ""tóm tắt bài học hôm nay cả sile bài giảng này những vấn đề cốt lõi nhất, cô đọng nhất"")
+tóm tắt bài học hôm nay cả sile bài giảng này những vấn đề cốt lõi nhất, cô đọng nhất ",,,,,,False,2026-07-27 05:21:55.923187+00:00,4,gemini-3.1-flash-lite,10145,73,0.000000,1502
+C0214,U0318,Lecture_material_ms203vsq_ob7vqp,in_class,T1119,completed,M0755,tutor,"Rất xin lỗi bạn, hiện tại tôi không thể truy xuất được tóm tắt tổng thể cho bài giảng này từ hệ thống dữ liệu slide. Bạn có thể cho tôi biết tiêu đề hoặc chủ đề chính của ngày học này, hoặc nêu rõ một khái niệm cụ thể mà bạn muốn tôi giải thích không? Tôi sẽ hỗ trợ bạn làm rõ vấn đề đó ngay.",review_concept,[],[],[],,False,2026-07-27 05:21:55.923187+00:00,4,gemini-3.1-flash-lite,10145,73,0.000000,1502
+C0222,U0356,Lecture_material_ms203vsq_ob7vqp,in_class,T0974,completed,M2174,tutor,"Rất tiếc, tôi không tìm thấy tài liệu cụ thể được đánh dấu là ""day 2"" trong kho dữ liệu hiện tại của ngày học này. Bạn có thể cung cấp thêm từ khóa hoặc chủ đề cụ thể trong slide mà bạn muốn tóm tắt không? Tôi sẽ hỗ trợ bạn tìm kiếm chính xác nội dung đó.",review_concept,[],[],[],,False,2026-07-27 05:42:25.328654+00:00,3,gemini-3.1-flash-lite,7527,63,0.000000,1598
+C0222,U0356,Lecture_material_ms203vsq_ob7vqp,in_class,T0974,completed,M0141,student,"(Trang 41, đoạn được chọn: ""tóm tắt nội dung quan trọng trong slide day 2"")
+tóm tắt nội dung quan trọng trong slide day 2",,,,,,False,2026-07-27 05:42:25.328654+00:00,3,gemini-3.1-flash-lite,7527,63,0.000000,1598
+C0228,U0097,Lecture_material_ms203vsq_ob7vqp,in_class,T0549,completed,M0878,student,"(Trang 41, đoạn được chọn: ""Explain detail on section 04, page 41. Pain point at Workflow"")
+Explain detail on section 04, page 41. Pain point at Workflow",,,,,,False,2026-07-27 05:21:09.794539+00:00,3,gemini-3.1-flash-lite,7551,104,0.000000,1962
+C0228,U0097,Lecture_material_ms203vsq_ob7vqp,in_class,T0549,completed,M2131,tutor,"Rất tiếc, hiện tại tôi không tìm thấy nội dung chi tiết cho mục ""Workflow pain point"" tại trang 41 trong tài liệu của ngày học này. Có thể tiêu đề hoặc nội dung đã được đặt tên khác trong các phần còn lại của slide.
+
+Bạn có thể cung cấp thêm thông tin hoặc bối cảnh cụ thể về phần này (ví dụ: tên kỹ thuật, thuật toán hoặc quy trình mà workflow đó đang đề cập đến) để tôi có thể hỗ trợ bạn tìm kiếm chính xác hơn không?",review_concept,[],[],[],,False,2026-07-27 05:21:09.794539+00:00,3,gemini-3.1-flash-lite,7551,104,0.000000,1962
+C0233,U0335,day02-c301,in_class,T1134,completed,M2123,tutor,"Chào bạn, rất vui được hỗ trợ bạn. Tuy nhiên, hiện tại tôi chưa tìm thấy tài liệu tổng quát hoặc tóm tắt nội dung chính của buổi học trong hệ thống slide.
+
+Để tôi có thể hỗ trợ bạn tốt nhất, bạn có thể cho tôi biết bạn đang quan tâm đến chủ đề hoặc khái niệm cụ thể nào trong bài học ngày hôm nay không? Tôi sẽ giúp bạn tra cứu và giải thích chi tiết về nội dung đó.",review_concept,[],[],[],,False,2026-07-26 17:12:03.335723+00:00,3,gemini-3.1-flash-lite,7533,91,0.000000,1428
+C0233,U0335,day02-c301,in_class,T1134,completed,M1307,student,"(Trang 60, đoạn được chọn: ""Tôi muốn bạn đưa ra bản tóm tắt chi tiết nội dung tài liệu này"")
+Tôi muốn bạn đưa ra bản tóm tắt chi tiết nội dung tài liệu này",,,,,,False,2026-07-26 17:12:03.335723+00:00,3,gemini-3.1-flash-lite,7533,91,0.000000,1428
+C0235,U0352,Lecture_material_ms2044ey_k6uor3,in_class,T1139,completed,M2296,tutor,"Chào bạn, rất tiếc là hệ thống hiện không tìm thấy tóm tắt tổng quát cho bài học ngày 3 trong tài liệu được cung cấp. Nếu bạn cần giải đáp về một khái niệm cụ thể nào đó (ví dụ: sự khác biệt giữa Chatbot và Agentic Agent, hay cơ chế của ReAct), hãy đặt câu hỏi để mình hỗ trợ bạn nhé!",review_concept,[],[],[],,False,2026-07-27 10:38:14.368877+00:00,4,gemini-3.1-flash-lite,10033,71,0.000000,1479
+C0235,U0352,Lecture_material_ms2044ey_k6uor3,in_class,T1139,completed,M0900,student,"(Trang 33, đoạn được chọn: ""tóm tat bai hoc day 3"")
+tóm tat bai hoc day 3",,,,,,False,2026-07-27 10:38:14.368877+00:00,4,gemini-3.1-flash-lite,10033,71,0.000000,1479
+C0241,U0255,New learning material,in_class,T0953,completed,M0771,tutor,"Xin lỗi bạn, tôi không tìm thấy nội dung cụ thể ở trang 12 trong tài liệu của ngày học này. Bạn có thể cho tôi biết tiêu đề hoặc chủ đề của trang đó để tôi hỗ trợ bạn tìm kiếm và giải thích chi tiết hơn không?",review_concept,[],[],[],,False,2026-07-24 02:33:48.356323+00:00,3,gemini-3.1-flash-lite,11940,52,0.000000,1692
+C0241,U0255,New learning material,in_class,T0953,completed,M0087,student,"(Trang 12, đoạn được chọn: ""Nói sâu hơn về trang tài liệu này"")
+Nói sâu hơn về trang tài liệu này",,,,,,False,2026-07-24 02:33:48.356323+00:00,3,gemini-3.1-flash-lite,11940,52,0.000000,1692
+C0244,U0111,New learning material,in_class,T1144,completed,M1711,tutor,"Rất tiếc, tôi không tìm thấy nội dung cụ thể liên quan đến ""Giải thích chi tiết"" tại trang 38 trong slide bài giảng hiện tại. Bạn có thể cung cấp thêm thông tin hoặc chủ đề chính mà đoạn đó đề cập đến không? Tôi sẽ dựa trên đó để tìm kiếm lại và hỗ trợ bạn giải thích khái niệm này một cách chính xác nhất.",review_concept,[],[],[],,False,2026-07-23 10:31:34.580374+00:00,3,gemini-3.1-flash-lite,11925,76,0.000000,1802
+C0244,U0111,New learning material,in_class,T1144,completed,M1113,student,"(Trang 38, đoạn được chọn: ""Giải thích chi tiết"")
+Giải thích chi tiết",,,,,,False,2026-07-23 10:31:34.580374+00:00,3,gemini-3.1-flash-lite,11925,76,0.000000,1802
+C0253,U0311,New learning material,in_class,T1040,completed,M0690,student,"(Trang 4, đoạn được chọn: ""giải thích đi"")
+giải thích đi",,,,,,False,2026-07-23 07:25:01.298816+00:00,6,gemini-3-flash,25930,104,0.000000,5216
+C0253,U0311,New learning material,in_class,T1040,completed,M1402,tutor,"Rất tiếc là mình chưa tìm thấy nội dung cụ thể của **trang 4** trong tài liệu bài học này để giải thích cho bạn.
+
+Để mình hỗ trợ tốt nhất, bạn có thể cho mình biết trên trang đó đang đề cập đến chủ đề gì (ví dụ: định nghĩa về AI, khái niệm Token, hay các mô hình ngôn ngữ lớn...) hoặc trích dẫn một vài từ khóa quan trọng xuất hiện trên trang đó không? Mình sẽ dựa vào đó để tra cứu và giải thích chi tiết cho bạn ngay.",give_direct_answer,[],[],[],,False,2026-07-23 07:25:01.298816+00:00,6,gemini-3-flash,25930,104,0.000000,5216
+C0254,U0116,Lecture_material_ms204i6x_gqwyya,in_class,T0850,completed,M1658,tutor,"Rất tiếc, hiện tại hệ thống không hiển thị trực tiếp đoạn văn bản bạn đã bôi đỏ trên slide 24. Bạn vui lòng chép lại nội dung đó hoặc cho tôi biết tiêu đề/chủ đề chính của phần đó, tôi sẽ giúp bạn giải thích chi tiết ngay nhé!",review_concept,[],[],[],,False,2026-07-28 10:05:41.070874+00:00,3,gemini-3.1-flash-lite,7518,56,0.000000,1456
+C0254,U0116,Lecture_material_ms204i6x_gqwyya,in_class,T0850,completed,M1125,student,"(Trang 24, đoạn được chọn: ""giải thích đoạn tôi vừa bôi đỏ"")
+giải thích đoạn tôi vừa bôi đỏ",,,,,,False,2026-07-28 10:05:41.070874+00:00,3,gemini-3.1-flash-lite,7518,56,0.000000,1456
+C0268,U0226,Lecture_material_ms2044ey_k6uor3,in_class,T0553,completed,M0395,student,"(Trang 15, đoạn được chọn: ""giải thích slide này"")
+giải thích slide này",,,,,,False,2026-07-28 03:56:20.050176+00:00,3,gemini-3.1-flash-lite,7704,49,0.000000,1540
+C0268,U0226,Lecture_material_ms2044ey_k6uor3,in_class,T0553,completed,M1133,tutor,"Rất tiếc, mình không tìm thấy nội dung cụ thể cho slide 15 trong tài liệu của bài học này. Bạn có thể cung cấp thêm thông tin hoặc tiêu đề của slide đó để mình hỗ trợ giải thích rõ hơn cho bạn không?",review_concept,[],[],[],,False,2026-07-28 03:56:20.050176+00:00,3,gemini-3.1-flash-lite,7704,49,0.000000,1540
+C0280,U0091,Lecture_material_ms2044ey_k6uor3,in_class,T0531,completed,M0812,tutor,"Xin chào, mình là trợ giảng AI của khóa học. Rất tiếc hiện tại mình không tìm thấy nội dung chi tiết về các hạn chế xử lý của ReAct Agent tại trang 8 trong tài liệu được cung cấp.
+
+Bạn có thể chia sẻ thêm ngữ cảnh hoặc nội dung cụ thể mà slide đang nhắc tới không? Mình sẽ dựa vào đó để hỗ trợ bạn giải thích rõ hơn về vấn đề này.",review_concept,[],[],[],down,False,2026-07-27 07:39:06.013936+00:00,5,gemini-3.1-flash-lite,12576,82,0.000000,1488
+C0280,U0091,Lecture_material_ms2044ey_k6uor3,in_class,T0531,completed,M0352,student,"(Trang 8, đoạn được chọn: ""tại sao chưa xử lí được"")
+tại sao chưa xử lí được",,,,,,False,2026-07-27 07:39:06.013936+00:00,5,gemini-3.1-flash-lite,12576,82,0.000000,1488
+C0290,U0165,Lecture_material_ms2044ey_k6uor3,in_class,T0036,completed,M2345,tutor,"Dựa trên nội dung tài liệu của ngày học, tôi không tìm thấy bảng so sánh hoặc phân tích chi tiết về rủi ro của ba loại hệ thống này tại trang 8.
+
+Để tôi có thể hỗ trợ bạn chính xác nhất, bạn có thể kiểm tra lại xem nội dung về rủi ro có nằm ở một trang khác hoặc trong tài liệu bổ sung nào khác của ngày hôm nay không? Nếu có thông tin cụ thể trong slide mà bạn muốn tôi giải thích, vui lòng cung cấp thêm từ khóa hoặc nội dung đó nhé.",review_concept,[],[],[],,False,2026-07-27 23:55:47.834055+00:00,5,gemini-3.1-flash-lite,14999,108,0.000000,1527
+C0290,U0165,Lecture_material_ms2044ey_k6uor3,in_class,T0036,completed,M2205,student,"(Trang 8, đoạn được chọn: ""trang 8 những rủi ro của rule-based bot , llm chatbot và agent. giai thích rõ 3 thằng này."")
+trang 8 những rủi ro của rule-based bot , llm chatbot và agent. giai thích rõ 3 thằng này.",,,,,,False,2026-07-27 23:55:47.834055+00:00,5,gemini-3.1-flash-lite,14999,108,0.000000,1527
+C0298,U0138,Lecture_material_ms203vsq_ob7vqp,in_class,T1081,completed,M1484,tutor,"Xin chào! Rất tiếc là hệ thống hiện tại chưa tìm thấy thông tin chi tiết về ""Quy trình HCD"" cụ thể tại trang 18 trong tài liệu đã được tải lên cho buổi học này.
+
+HCD (Human-Centered Design) thường là một quy trình thiết kế tập trung vào con người, bao gồm các bước cốt lõi như: Thấu hiểu (Empathize), Xác định vấn đề (Define), Lên ý tưởng (Ideate), Tạo mẫu (Prototype) và Kiểm thử (Test).
+
+Bạn có thể chia sẻ thêm cho mình biết đoạn nội dung đó đề cập đến những bước cụ thể nào hoặc ngữ cảnh của slide đó không? Mình sẽ hỗ trợ bạn giải thích kỹ hơn dựa trên những thông tin đó!",review_concept,[],[],[],,False,2026-07-27 04:11:25.944287+00:00,3,gemini-3.1-flash-lite,7497,144,0.000000,1454
+C0298,U0138,Lecture_material_ms203vsq_ob7vqp,in_class,T1081,completed,M2089,student,"(Trang 18, đoạn được chọn: ""Quy trình HCD"")
+Giải thích đoạn bôi đen ở Trang 18.",,,,,,False,2026-07-27 04:11:25.944287+00:00,3,gemini-3.1-flash-lite,7497,144,0.000000,1454
+C0310,U0113,New learning material,in_class,T0183,completed,M1251,tutor,"Rất tiếc là mình chưa tìm thấy nội dung cụ thể của **trang 6** trong hệ thống dữ liệu slide hiện tại (kết quả tìm kiếm chỉ trả về các trang khác có chứa số ""6""). 
+
+Để mình có thể giải thích rõ nhất ""phần này"" cho bạn, bạn hãy giúp mình **chụp ảnh màn hình** trang đó hoặc **copy nội dung văn bản** trên trang 6 mà bạn đang thắc mắc vào đây nhé! Mình sẽ giải thích ngay cho bạn.",give_direct_answer,[],[],[],,False,2026-07-23 07:27:34.001294+00:00,6,gemini-3-flash,25918,94,0.000000,4657
+C0310,U0113,New learning material,in_class,T0183,completed,M0029,student,"(Trang 6, đoạn được chọn: ""nói rõ phần này"")
+nói rõ phần này",,,,,,False,2026-07-23 07:27:34.001294+00:00,6,gemini-3-flash,25918,94,0.000000,4657
+C0310,U0113,New learning material,in_class,T0362,completed,M0397,tutor,"Rất tiếc là mình hiện không tìm thấy nội dung của **trang 18** trong hệ thống dữ liệu (kết quả tìm kiếm theo số trang không trả về thông tin).
+
+Để mình hỗ trợ bạn tốt nhất, bạn có thể giúp mình:
+1. **Chụp ảnh màn hình** slide 18 đó.
+2. Hoặc **cho mình biết tiêu đề/nội dung chính** của slide 18 là gì không? 
+
+Ngay khi có thông tin về chủ đề, mình sẽ giải thích kĩ phần đó cho bạn ngay!",give_direct_answer,[],[],[],,False,2026-07-23 07:35:00.606454+00:00,5,gemini-3-flash,20562,96,0.000000,4732
+C0310,U0113,New learning material,in_class,T0362,completed,M2208,student,"(Trang 17, đoạn được chọn: ""giải thích kĩ slide 18"")
+giải thích kĩ slide 18",,,,,,False,2026-07-23 07:35:00.606454+00:00,5,gemini-3-flash,20562,96,0.000000,4732
+C0314,U0259,Lecture_material_ms203vsq_ob7vqp,in_class,T1202,completed,M1072,tutor,"Chào bạn, hiện tại tôi không tìm thấy phần tóm tắt tổng quát các đầu kiến thức quan trọng trong tài liệu của bài giảng này. Để hỗ trợ bạn hiệu quả nhất, bạn có thể cho tôi biết chủ đề cụ thể hoặc khái niệm mà bạn đang muốn hệ thống lại không? Tôi sẽ giúp bạn tra cứu chi tiết nội dung đó.",review_concept,[],[],[],,False,2026-07-27 05:48:23.253950+00:00,3,gemini-3.1-flash-lite,7563,72,0.000000,1545
+C0314,U0259,Lecture_material_ms203vsq_ob7vqp,in_class,T1202,completed,M1338,student,"(Trang 39, đoạn được chọn: ""hãy tóm tắt các đầu kiến thức quan trọng cần phải nắm ở bài giảng này"")
+hãy tóm tắt các đầu kiến thức quan trọng cần phải nắm ở bài giảng này",,,,,,False,2026-07-27 05:48:23.253950+00:00,3,gemini-3.1-flash-lite,7563,72,0.000000,1545
+C0314,U0259,Lecture_material_ms203vsq_ob7vqp,in_class,T0820,completed,M1100,tutor,"Rất xin lỗi bạn, trong nội dung bài giảng này không có một slide tổng hợp tóm tắt toàn bộ 76 trang.
+
+Để giúp bạn ôn tập hiệu quả, bạn có thể cho tôi biết chương hoặc khái niệm cụ thể nào mà bạn đang tập trung không? Khi bạn đưa ra một chủ đề cụ thể, tôi sẽ tra cứu nội dung đó trong tài liệu để giúp bạn tóm tắt các điểm chính.",review_concept,[],[],[],,False,2026-07-27 05:48:50.255796+00:00,3,gemini-3.1-flash-lite,7833,81,0.000000,1651
+C0314,U0259,Lecture_material_ms203vsq_ob7vqp,in_class,T0820,completed,M0363,student,"(Trang 39, đoạn được chọn: ""hãy tóm tắt 76 slide"")
+hãy tóm tắt 76 slide",,,,,,False,2026-07-27 05:48:50.255796+00:00,3,gemini-3.1-flash-lite,7833,81,0.000000,1651
+C0320,U0047,New learning material,in_class,T1218,completed,M0393,tutor,"Rất tiếc là mình không tìm thấy thông tin chi tiết về ""quỹ đạo của mode"" tại slide 56 trong tài liệu của ngày học hôm nay.
+
+Vì mình không xem được nội dung cụ thể của slide đó, bạn có thể mô tả hình ảnh hoặc nội dung chính mà slide đang nhắc tới không? Ví dụ, đó là hình vẽ về các đường cong, biểu đồ phân phối, hay quá trình huấn luyện mô hình nào? Nếu có thêm thông tin, mình sẽ hỗ trợ bạn giải thích chính xác ý nghĩa của nó ngay!",review_concept,[],[],[],,False,2026-07-23 09:33:25.194713+00:00,2,gemini-3.1-flash-lite,8799,108,0.000000,1890
+C0320,U0047,New learning material,in_class,T1218,completed,M0080,student,"(Trang 56, đoạn được chọn: ""slide 56 , quỹ đạo của mode là sao, r giai thich cai hinh"")
+slide 56 , quỹ đạo của mode là sao, r giai thich cai hinh",,,,,,False,2026-07-23 09:33:25.194713+00:00,2,gemini-3.1-flash-lite,8799,108,0.000000,1890
+C0323,U0283,Lecture_material_ms204i6x_gqwyya,in_class,T1074,completed,M2099,student,"(Trang 17, đoạn được chọn: ""tóm tắt tài liệu này"")
+tóm tắt tài liệu này",,,,,,False,2026-07-28 07:35:56.072326+00:00,3,gemini-3.1-flash-lite,7503,62,0.000000,1425
+C0323,U0283,Lecture_material_ms204i6x_gqwyya,in_class,T1074,completed,M1675,tutor,"Chào bạn, rất xin lỗi vì hiện tại tôi không thể truy cập trực tiếp vào nội dung tài liệu cụ thể mà bạn đang xem trên trang 17. Để tôi có thể hỗ trợ bạn tóm tắt chính xác, bạn vui lòng chia sẻ nội dung hoặc tiêu đề chính của tài liệu đó tại đây nhé!",review_concept,[],[],[],,False,2026-07-28 07:35:56.072326+00:00,3,gemini-3.1-flash-lite,7503,62,0.000000,1425
+C0332,U0223,Lecture_material_ms1wxott_9fsh7f,in_class,T1090,completed,M1044,student,"(Trang 10, đoạn được chọn: ""trang này nói gì"")
+trang này nói gì",,,,,,False,2026-07-26 15:41:40.420310+00:00,3,gemini-3.1-flash-lite,7638,66,0.000000,1472
+C0332,U0223,Lecture_material_ms1wxott_9fsh7f,in_class,T1090,completed,M2156,tutor,"Rất xin lỗi bạn, mình đã kiểm tra lại tài liệu nhưng không tìm thấy nội dung cụ thể cho trang 10 trong slide của buổi học này. Bạn có thể cho mình biết chủ đề chính hoặc khái niệm bạn đang quan tâm trong trang đó không? Mình sẽ hỗ trợ bạn tìm thông tin chính xác hơn.",review_concept,[],[],[],,False,2026-07-26 15:41:40.420310+00:00,3,gemini-3.1-flash-lite,7638,66,0.000000,1472
+C0341,U0324,New learning material,in_class,T0489,completed,M1989,tutor,"Rất tiếc, tôi không tìm thấy nội dung văn bản cụ thể tại trang 24 trong tài liệu bài học hiện tại để thực hiện yêu cầu chia đoạn và dịch thuật cho bạn. 
+
+Bạn có thể cung cấp đoạn văn bản đó ở đây không? Tôi sẽ hỗ trợ bạn chia nhỏ và chuyển ngữ ngay lập tức.",give_direct_answer,[],[],[],,False,2026-07-24 10:36:26.695443+00:00,3,gemini-3.1-flash-lite,12012,64,0.000000,1637
+C0341,U0324,New learning material,in_class,T0489,completed,M0176,student,"(Trang 24, đoạn được chọn: ""chia phần trên thành năm đoạn và in ra đoạn thứ 2 với các từ chuyển sang tiếng việt"")
+chia phần trên thành năm đoạn và in ra đoạn thứ 2 với các từ chuyển sang tiếng việt",,,,,,False,2026-07-24 10:36:26.695443+00:00,3,gemini-3.1-flash-lite,12012,64,0.000000,1637
+C0343,U0162,Lecture_material_ms2044ey_k6uor3,in_class,T0278,completed,M0680,tutor,"Xin lỗi bạn, vì nội dung slide không hiển thị từ khoá ""loo"" ở trang 13, tôi không thể giải thích ý nghĩa của đoạn bôi đen đó dựa trên tài liệu bài giảng được cung cấp.
+
+Bạn có thể kiểm tra lại nội dung hiển thị trong tài liệu hoặc cung cấp thêm ngữ cảnh xung quanh đoạn văn đó không? Tôi sẽ rất sẵn lòng hỗ trợ giải thích nếu có đầy đủ thông tin.",review_concept,[],[],[],,False,2026-07-28 03:09:46.196271+00:00,3,gemini-3.1-flash-lite,7503,86,0.000000,1523
+C0343,U0162,Lecture_material_ms2044ey_k6uor3,in_class,T0278,completed,M1355,student,"(Trang 13, đoạn được chọn: ""loo"")
+Giải thích đoạn bôi đen ở Trang 13.",,,,,,False,2026-07-28 03:09:46.196271+00:00,3,gemini-3.1-flash-lite,7503,86,0.000000,1523
+C0346,U0093,New learning material,in_class,T0840,completed,M1579,tutor,"Rất tiếc, tôi không tìm thấy thông tin hoặc hình ảnh cụ thể được khoanh đỏ tại slide 59 trong tài liệu bài giảng được cung cấp. Có vẻ như nội dung đó không hiển thị trong dữ liệu slide hiện có của tôi.
+
+Bạn có thể cung cấp thêm thông tin về chủ đề hoặc nội dung hình ảnh đó không? Tôi sẽ dựa vào đó để hỗ trợ bạn phân tích.",review_concept,[],[],[],,False,2026-07-23 10:47:43.291665+00:00,3,gemini-3.1-flash-lite,12624,80,0.000000,1642
+C0346,U0093,New learning material,in_class,T0840,completed,M0859,student,"(Trang 59, đoạn được chọn: ""phân tích hình ảnh được khoanh đỏ ở slide 59"")
+phân tích hình ảnh được khoanh đỏ ở slide 59",,,,,,False,2026-07-23 10:47:43.291665+00:00,3,gemini-3.1-flash-lite,12624,80,0.000000,1642
+C0353,U0076,Lecture_material_ms5r18w1_oe5xlz,in_class,T0261,completed,M1787,student,"(Trang 1, đoạn được chọn: ""tóm tắt hộ tôi bài giảng này"")
+tóm tắt hộ tôi bài giảng này",,,,,,False,2026-07-29 07:24:10.870757+00:00,3,gemini-3.1-flash-lite,7506,75,0.000000,1458
+C0353,U0076,Lecture_material_ms5r18w1_oe5xlz,in_class,T0261,completed,M1541,tutor,"Chào bạn, tôi rất sẵn lòng hỗ trợ bạn tóm tắt nội dung bài giảng. Tuy nhiên, hiện tại tôi chưa tìm thấy tài liệu chi tiết cho ngày học này trong hệ thống. Bạn có thể cho tôi biết chủ đề cụ thể hoặc cung cấp thêm thông tin từ bài giảng mà bạn muốn tóm tắt không? Tôi sẽ dựa vào đó để hỗ trợ bạn tốt nhất.",review_concept,[],[],[],,False,2026-07-29 07:24:10.870757+00:00,3,gemini-3.1-flash-lite,7506,75,0.000000,1458
+C0358,U0227,day02-c301,in_class,T0673,completed,M1876,tutor,"Rất tiếc, mình đã kiểm tra lại toàn bộ tài liệu slide được cung cấp cho ngày học hôm nay nhưng không tìm thấy thông tin cụ thể nào về ""6 giai đoạn phát triển của AI Product"" ở trang 71 hoặc bất kỳ trang nào khác. Có thể đây là tài liệu nằm ngoài phạm vi slide bài giảng của buổi học này.",review_concept,[],[],[],,False,2026-07-24 08:14:37.036969+00:00,2,gemini-3.1-flash-lite,8151,71,0.000000,1684
+C0358,U0227,day02-c301,in_class,T0673,completed,M1490,student,"(Trang 71, đoạn được chọn: ""6 giai đoạn phát triển của AI Product"")
+6 giai đoạn phát triển của AI Product",,,,,,False,2026-07-24 08:14:37.036969+00:00,2,gemini-3.1-flash-lite,8151,71,0.000000,1684
+C0363,U0131,Lecture_material_ms2lb2ke_c1je8j,in_class,T0476,completed,M0422,tutor,"Rất xin lỗi, tôi không thể tóm tắt toàn bộ slide chỉ trong một câu trả lời vì tài liệu bài giảng ngày hôm nay bao gồm nhiều nội dung chi tiết.
+
+Để tôi có thể hỗ trợ bạn hiệu quả nhất, bạn có thể cho tôi biết bạn đang quan tâm đến phần nào trong bài học này không? Ví dụ: sự khác biệt giữa Chatbot và Agent, cấu trúc của mô hình ReAct, hay cách Agent sử dụng công cụ (tool-use)? Hãy đặt câu hỏi cụ thể, tôi sẽ giải thích ngay dựa trên nội dung bài giảng.",review_concept,[],[],[],,False,2026-07-27 07:22:13.940219+00:00,3,gemini-3.1-flash-lite,8370,113,0.000000,1611
+C0363,U0131,Lecture_material_ms2lb2ke_c1je8j,in_class,T0476,completed,M0531,student,"(Trang 3, đoạn được chọn: ""tóm tắt toàn bộ slide"")
+tóm tắt toàn bộ slide",,,,,,False,2026-07-27 07:22:13.940219+00:00,3,gemini-3.1-flash-lite,8370,113,0.000000,1611
+C0375,U0250,New learning material,in_class,T0384,completed,M1060,student,"(Trang 3, đoạn được chọn: ""Tóm tắt cho tôi slide này"")
+Tóm tắt cho tôi slide này",,,,,,False,2026-07-23 08:12:39.539172+00:00,6,gemini-3-flash,25382,265,0.000000,4884
+C0375,U0250,New learning material,in_class,T0384,completed,M1452,tutor,"Rất tiếc là mình không tìm thấy nội dung cụ thể của trang 3 trong kết quả tra cứu hiện tại. Tuy nhiên, dựa trên các nội dung khác của bài học ngày 01 mà mình tìm thấy, bài học đang tập trung vào các chủ đề quan trọng sau:
+
+*   **Sự phát triển về kiến trúc mô hình:** Các kỹ thuật như RoPE (đánh số ghế thông minh), GQA/MLA (sổ ghi chú dùng chung) giúp mô hình ghi nhớ ngữ cảnh dài hơn và tiết kiệm chi phí; hay kiến trúc MoE (chuyên gia hóa) giúp tăng tham số nhưng tối ưu hóa tài nguyên [trang 61].
+*   **Giới hạn dữ liệu (""Data wall""):** Dự báo đến năm 2024, các mô hình sẽ dần đọc hết các văn bản công khai của nhân loại, khiến việc chỉ tăng quy mô dữ liệu không còn là giải pháp duy nhất để cải thiện hiệu năng [trang 61].
+*   **So sánh phong cách các mô hình:** Ví dụ như Claude thường có phong cách trả lời mạch lạc, thiên về cấu trúc, phù hợp để phân tích tài liệu dài, trong khi GPT thường ngắn gọn và tự nhiên hơn [trang 71].
+
+Nếu trang 3 chứa một chủ đề cụ thể nào khác, bạn có thể chia sẻ thêm một vài từ khóa để mình hỗ trợ tóm tắt chính xác hơn nhé!",give_direct_answer,"[61, 71]",[],[],,False,2026-07-23 08:12:39.539172+00:00,6,gemini-3-flash,25382,265,0.000000,4884
+C0378,U0029,New learning material,in_class,T0602,completed,M2339,student,"(Trang 33, đoạn được chọn: ""Minh"")
+Giải thích đoạn bôi đen ở Trang 33.",,,,,,False,2026-07-23 09:26:40.538842+00:00,3,gemini-3.1-flash-lite,24018,85,0.000000,1767
+C0378,U0029,New learning material,in_class,T0602,completed,M1285,tutor,"Rất xin lỗi, tôi không tìm thấy nội dung cụ thể cho ""Minh"" ở trang 33 trong tài liệu bài giảng được cung cấp. Có thể bạn đã đọc nhầm số trang hoặc tài liệu có tên riêng này không nằm trong phần nội dung tôi đang quản lý.
+
+Nếu bạn có thể cung cấp thêm ngữ cảnh hoặc nội dung đầy đủ hơn của đoạn văn đó, tôi sẽ rất vui lòng giải thích giúp bạn.",review_concept,[],[],[],,False,2026-07-23 09:26:40.538842+00:00,3,gemini-3.1-flash-lite,24018,85,0.000000,1767
+C0397,U0068,Lecture_material_ms2044ey_k6uor3,in_class,T0366,completed,M0867,student,"(Trang 14, đoạn được chọn: ""summary toàn bộ các slide cho tôi"")
+summary toàn bộ các slide cho tôi",,,,,,False,2026-07-27 08:19:30.733917+00:00,3,gemini-3.1-flash-lite,7524,85,0.000000,1503
+C0397,U0068,Lecture_material_ms2044ey_k6uor3,in_class,T0366,completed,M1091,tutor,"Chào bạn, hiện tại tôi không thể tóm tắt được toàn bộ các slide vì hệ thống tra cứu chưa tìm thấy nội dung tổng quát của ngày học này. Bạn có thể cung cấp thêm thông tin hoặc đặt câu hỏi cụ thể về khái niệm nào bạn đang quan tâm (ví dụ: Chatbot, Agent, hay kỹ thuật ReAct) không? Tôi sẽ hỗ trợ bạn tìm kiếm và giải thích chi tiết về phần đó.",review_concept,[],[],[],,False,2026-07-27 08:19:30.733917+00:00,3,gemini-3.1-flash-lite,7524,85,0.000000,1503
+C0408,U0158,New learning material,in_class,T1142,completed,M0381,student,"(Trang 83, đoạn được chọn: ""tóm tắt toàn bộ tài liệu, kiến thức quan trọng cần nhớ"")
+tóm tắt toàn bộ tài liệu, kiến thức quan trọng cần nhớ ",,,,,,False,2026-07-24 02:18:30.497373+00:00,5,gemini-3.1-flash-lite,20016,69,0.000000,1643
+C0408,U0158,New learning material,in_class,T1142,completed,M1406,tutor,"Rất tiếc, hiện tại tài liệu giảng dạy của ngày học này không chứa một trang tóm tắt tổng hợp cụ thể như bạn đề cập. Nếu bạn có câu hỏi về một khái niệm cụ thể nào đã học trong buổi hôm nay, hãy cho tôi biết, tôi sẽ hỗ trợ giải thích dựa trên nội dung chi tiết của các phần đó.",review_concept,[],[],[],,False,2026-07-24 02:18:30.497373+00:00,5,gemini-3.1-flash-lite,20016,69,0.000000,1643
+C0412,U0064,Lecture_material_ms4ahenz_7cpqa2,in_class,T0607,completed,M2204,student,"(Trang 33, đoạn được chọn: ""tóm tắt bài học cho tô"")
+tóm tắt bài học cho tô",,,,,,False,2026-07-28 09:17:07.316915+00:00,3,gemini-3.1-flash-lite,7938,137,0.000000,1801
+C0412,U0064,Lecture_material_ms4ahenz_7cpqa2,in_class,T0607,completed,M0155,tutor,"Rất xin lỗi bạn, mình hiện không tìm thấy nội dung tóm tắt tổng quát cho toàn bộ bài học về ""Prompt Engineering cho Tool Calling"" trong các slide được cung cấp.
+
+Để mình có thể hỗ trợ bạn tốt nhất, bạn có thể cho mình biết cụ thể hơn là bạn muốn tóm tắt phần nào của bài học không? Ví dụ như:
+*   Cách định dạng tool schema cho LLM.
+*   Quy trình LLM gọi tool (đầu ra của LLM khi cần gọi tool).
+*   Hay các thực hành tốt (best practices) khi viết prompt cho tool calling?
+
+Nếu bạn có một trang slide cụ thể cần tóm tắt, hãy cho mình biết số trang nhé!",review_concept,[],[],[],,False,2026-07-28 09:17:07.316915+00:00,3,gemini-3.1-flash-lite,7938,137,0.000000,1801
+C0412,U0064,Lecture_material_ms4ahenz_7cpqa2,in_class,T1013,completed,M2223,student,"(Trang 33, đoạn được chọn: ""Tại sao bạn không đọc được slide cụ thể từng trang hay là không thể cho tôi report lỗi tôi muốn."")
+Tại sao bạn không đọc được slide cụ thể từng trang hay là không thể cho tôi report lỗi tôi muốn. ",,,,,,False,2026-07-28 09:18:25.205090+00:00,3,gemini-3.1-flash-lite,8517,157,0.000000,1750
+C0412,U0064,Lecture_material_ms4ahenz_7cpqa2,in_class,T1013,completed,M1581,tutor,"Xin lỗi bạn vì sự bất tiện này. Mình hoàn toàn có thể đọc nội dung từng trang trong slide bài giảng. Tuy nhiên, mình chỉ có thể cung cấp thông tin dựa trên dữ liệu thực tế có trong slide.
+
+Đối với trang 33 (slide 28) mà bạn đề cập, sau khi kiểm tra, mình không tìm thấy nội dung liệt kê ""3 lỗi"" nào tại đó. Có thể nội dung này nằm ở một trang khác hoặc bạn đang tham chiếu đến tài liệu ngoài slide chính.
+
+Bạn có thể xác nhận lại giúp mình: nội dung trang 33 trong tài liệu của bạn có tiêu đề là gì không? Hoặc nếu bạn muốn, hãy chụp ảnh hoặc sao chép văn bản từ trang đó vào đây, mình sẽ giúp bạn phân tích các lỗi ngay lập tức.",review_concept,[],[],[],,False,2026-07-28 09:18:25.205090+00:00,3,gemini-3.1-flash-lite,8517,157,0.000000,1750
+C0414,U0079,Lecture_material_ms4x7dx1_t0qyxg,in_class,T0404,completed,M1077,tutor,"Rất tiếc, hiện tại tôi không thể truy xuất nội dung tổng hợp của toàn bộ bài giảng từ tài liệu slide hiện có. Bạn có thể cho tôi biết chủ đề cụ thể hoặc khái niệm nào trong bài ""Prompt Engineering & Tool Calling"" mà bạn muốn tóm tắt hoặc cần làm rõ không? Tôi sẽ rất sẵn lòng giải thích chi tiết giúp bạn!",review_concept,[],[],[],down,False,2026-07-29 05:42:00.758396+00:00,3,gemini-3.1-flash-lite,7545,76,0.000000,1392
+C0414,U0079,Lecture_material_ms4x7dx1_t0qyxg,in_class,T0404,completed,M0515,student,"(Trang 90, đoạn được chọn: ""Tổng họp thông tin của toàn bộ bài giảng hôm nay"")
+Tổng họp thông tin của toàn bộ bài giảng hôm nay",,,,,,False,2026-07-29 05:42:00.758396+00:00,3,gemini-3.1-flash-lite,7545,76,0.000000,1392
+C0428,U0135,day02-c301,in_class,T0307,completed,M0759,tutor,"Rất tiếc, hiện tại tôi chỉ truy cập được một phần nội dung slide thông qua từ khóa bạn cung cấp [trang 11]. Vì không có toàn bộ tài liệu của ngày học `day02-c301`, tôi không thể thực hiện tóm tắt toàn bộ bài giảng cho bạn.
+
+Nếu bạn có nội dung cụ thể hoặc các câu hỏi chi tiết hơn về các phần khác trong bài giảng, vui lòng cung cấp thêm từ khóa để tôi tra cứu giúp bạn.",review_concept,[11],[],[],,False,2026-07-24 08:50:14.248625+00:00,5,gemini-3.1-flash-lite,20136,92,0.000000,1747
+C0428,U0135,day02-c301,in_class,T0307,completed,M2517,student,"(Trang 11, đoạn được chọn: ""Lớp học 1000 học viên (khóa K3 & K4, số lượng Trợ giảng
+có hạn.
+Dùng AI giải quyết thế nào?"")
+tóm tắt tất cả slide ",,,,,,False,2026-07-24 08:50:14.248625+00:00,5,gemini-3.1-flash-lite,20136,92,0.000000,1747
+C0429,U0094,Lecture_material_ms204i6x_gqwyya,in_class,T0772,completed,M2071,tutor,"Rất xin lỗi, mình đã tìm kiếm trong tài liệu bài giảng ngày hôm nay nhưng không thấy nội dung nào chứa ""bảng ở trang 9"" để có thể giải thích chi tiết cho bạn.
+
+Có thể tài liệu này bị thiếu hoặc mình chưa tra cứu đúng từ khóa. Bạn có thể chép lại nội dung của bảng hoặc các tiêu đề trong bảng đó vào đây không? Mình sẽ dựa vào đó để giải thích ý nghĩa cho bạn ngay.",review_concept,[],[],[],,False,2026-07-28 07:40:24.753771+00:00,3,gemini-3.1-flash-lite,9090,91,0.000000,1516
+C0429,U0094,Lecture_material_ms204i6x_gqwyya,in_class,T0772,completed,M0046,student,"(Trang 9, đoạn được chọn: ""giải thích"")
+giải thích",,,,,,False,2026-07-28 07:40:24.753771+00:00,3,gemini-3.1-flash-lite,9090,91,0.000000,1516
+C0430,U0135,New learning material,in_class,T0282,completed,M0361,tutor,"Rất tiếc, nội dung tài liệu tôi nhận được không có trang 6. Tôi đã thực hiện tra cứu theo từ khóa ""trang 6"" nhưng kết quả trả về chỉ đề cập đến các nội dung khác (ví dụ như trang 71 nói về sự khác biệt giữa các mô hình AI khi xử lý cùng một prompt).
+
+Để tôi có thể giúp bạn giải thích đúng nội dung bạn cần, bạn có thể cho tôi biết **chủ đề** hoặc **từ khóa chính** của trang 6 đó được không? Sau khi có từ khóa, tôi sẽ tìm và giải thích chi tiết cho bạn.",review_concept,[],[],[],,False,2026-07-23 08:48:56.462218+00:00,4,gemini-3.1-flash-lite,17095,113,0.000000,2031
+C0430,U0135,New learning material,in_class,T0282,completed,M1563,student,"(Trang 6, đoạn được chọn: ""giải thích giúp tôi"")
+giải thích giúp tôi ",,,,,,False,2026-07-23 08:48:56.462218+00:00,4,gemini-3.1-flash-lite,17095,113,0.000000,2031
+C0430,U0135,New learning material,in_class,T0458,completed,M1407,tutor,"Rất xin lỗi bạn, hiện tại tôi không tìm thấy nội dung nào tương ứng với ""slide 9"" trong tài liệu của ngày học này. Có vẻ như danh mục hoặc cách đánh số trang trong hệ thống dữ liệu của tôi không khớp với số trang mà bạn đang theo dõi.
+
+Để tôi có thể hỗ trợ bạn tốt nhất, bạn có thể cho tôi biết **chủ đề chính** hoặc một **từ khóa quan trọng** xuất hiện trong slide số 9 đó không? Tôi sẽ dựa vào từ khóa đó để tìm nội dung liên quan và giải thích cho bạn ngay.",review_concept,[],[],[],,False,2026-07-23 08:50:36.065494+00:00,3,gemini-3.1-flash-lite,13050,115,0.000000,1753
+C0430,U0135,New learning material,in_class,T0458,completed,M2279,student,"(Trang 9, đoạn được chọn: ""bạn hiểu gì về slide 9"")
+bạn hiểu gì về slide 9 ",,,,,,False,2026-07-23 08:50:36.065494+00:00,3,gemini-3.1-flash-lite,13050,115,0.000000,1753
+C0432,U0174,Lecture_material_ms5rpr5o_wgl8wy,in_class,T0127,completed,M0002,student,"(Trang 6, đoạn được chọn: ""giải thích slide 6, phần tô màu đỏ"")
+giải thích slide 6, phần tô màu đỏ",,,,,,False,2026-07-29 08:14:11.195731+00:00,3,gemini-3.1-flash-lite,8277,82,0.000000,1398
+C0432,U0174,Lecture_material_ms5rpr5o_wgl8wy,in_class,T0127,completed,M1043,tutor,"Rất tiếc, tôi không tìm thấy nội dung cụ thể cho ""High"" tại trang 6 trong tài liệu của bài học này. Có thể nội dung bạn đang xem nằm ở một trang khác hoặc tôi cần thêm thông tin ngữ cảnh xung quanh để hỗ trợ bạn tốt hơn.
+
+Bạn có thể cung cấp thêm thông tin về tiêu đề hoặc nội dung bao quanh phần ""High"" ở slide 6 đó được không?",review_concept,[],[],[],,False,2026-07-29 08:14:11.195731+00:00,3,gemini-3.1-flash-lite,8277,82,0.000000,1398
+C0437,U0112,Lecture_material_ms5rpr5o_wgl8wy,in_class,T0084,completed,M1096,tutor,"Rất tiếc, tôi không tìm thấy nội dung tóm tắt cho trang 37 trong tài liệu được cung cấp. Nếu bạn có câu hỏi cụ thể về khái niệm kỹ thuật nào đó đang được trình bày trong slide này, hãy cho tôi biết để tôi hỗ trợ giải thích rõ hơn nhé.",review_concept,[],[],[],,False,2026-07-29 10:36:33.378307+00:00,3,gemini-3.1-flash-lite,7860,58,0.000000,1317
+C0437,U0112,Lecture_material_ms5rpr5o_wgl8wy,in_class,T0084,completed,M2203,student,"(Trang 37, đoạn được chọn: ""tóm lại nội dung của slide này cho tôi"")
+tóm lại nội dung của slide này cho tôi ",,,,,,False,2026-07-29 10:36:33.378307+00:00,3,gemini-3.1-flash-lite,7860,58,0.000000,1317
+C0437,U0112,Lecture_material_ms5rpr5o_wgl8wy,in_class,T0614,completed,M2463,student,"(Trang 37, đoạn được chọn: ""tóm tắt lại nội dung của cả slide này cho tôi"")
+tóm tắt lại nội dung của cả slide này cho tôi ",,,,,,False,2026-07-29 10:37:04.573758+00:00,3,gemini-3.1-flash-lite,8127,90,0.000000,1781
+C0437,U0112,Lecture_material_ms5rpr5o_wgl8wy,in_class,T0614,completed,M1261,tutor,"Rất tiếc, hệ thống không tìm thấy nội dung cụ thể cho trang 37 trong tài liệu bài học ngày hôm nay. Có thể trang này không chứa nội dung văn bản hoặc không nằm trong tập dữ liệu tôi đang có. 
+
+Nếu bạn cần hỗ trợ về các khái niệm kỹ thuật hoặc nội dung cụ thể khác có trong các slide, bạn có thể nêu tên chủ đề hoặc từ khóa, tôi sẽ tìm kiếm và giải thích giúp bạn.",review_concept,[],[],[],,False,2026-07-29 10:37:04.573758+00:00,3,gemini-3.1-flash-lite,8127,90,0.000000,1781
+C0439,U0243,New learning material,in_class,T1110,completed,M2167,tutor,"Rất tiếc, tôi không tìm thấy nội dung cụ thể của trang 24 trong tài liệu bài giảng được cung cấp. Các slide hiện có tập trung vào các khái niệm về RNN [trang 21] và kiến trúc Transformer [trang 22, 28].
+
+Nếu bạn có thể cung cấp thêm thông tin hoặc tiêu đề/chủ đề chính nằm ở trang 24 đó, tôi sẽ có thể giải thích chi tiết hơn cho bạn dựa trên ngữ cảnh liên quan.",review_concept,[21],[],[],,False,2026-07-23 08:53:18.538291+00:00,5,gemini-3.1-flash-lite,22296,90,0.000000,1647
+C0439,U0243,New learning material,in_class,T1110,completed,M0582,student,"(Trang 24, đoạn được chọn: ""bạn giải thích trang 24"")
+bạn giải thích trang 24 ",,,,,,False,2026-07-23 08:53:18.538291+00:00,5,gemini-3.1-flash-lite,22296,90,0.000000,1647
+C0446,U0292,New learning material,in_class,T0795,completed,M2343,tutor,"Rất tiếc là mình đã thử tra cứu nhưng chưa tìm thấy nội dung cụ thể được đánh dấu là ""slide 9"" trong tài liệu hiện tại. 
+
+Bạn có thể chia sẻ thêm tiêu đề của slide đó hoặc một từ khóa/nội dung chính xuất hiện trên slide 9 để mình có thể hỗ trợ bạn giải thích chi tiết hơn không?",give_direct_answer,[],[],[],down,True,2026-07-23 08:09:57.062418+00:00,6,gemini-3-flash,23976,69,0.000000,4761
+C0446,U0292,New learning material,in_class,T0795,completed,M1942,student,"(Trang 10, đoạn được chọn: ""slide 9 là gì"")
+slide 9 là gì",,,,,,False,2026-07-23 08:09:57.062418+00:00,6,gemini-3-flash,23976,69,0.000000,4761
+C0448,U0043,New learning material,in_class,T0437,completed,M1213,student,"(Trang 3, đoạn được chọn: ""giải thích trang này"")
+giải thích trang này",,,,,,False,2026-07-23 07:25:08.053615+00:00,7,gemini-3-flash,29678,96,0.000000,4704
+C0448,U0043,New learning material,in_class,T0437,completed,M0856,tutor,"Rất tiếc, mình đã thử tìm kiếm nhưng chưa tra cứu được nội dung cụ thể của **trang 3** trong bộ slide ""day01-slide-blue-v1"" này. Kết quả tìm kiếm hiện tại chỉ hiển thị các trang khác (như trang 61 về xu hướng AI và trang 71 về ví dụ prompt).
+
+Để mình có thể giải thích chính xác nhất, bạn có thể chia sẻ giúp mình tiêu đề hoặc một vài nội dung chính xuất hiện trên trang 3 đó được không?",give_direct_answer,[],[],[],,False,2026-07-23 07:25:08.053615+00:00,7,gemini-3-flash,29678,96,0.000000,4704
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T0798,completed,M2499,tutor,"Rất xin lỗi bạn, hiện tại tôi chưa tìm thấy tài liệu tổng quan nội dung cho ""Day 1"" trong kho dữ liệu bài giảng của ngày học này. Bạn có thể cung cấp thêm thông tin hoặc một chủ đề cụ thể mà bạn muốn tôi giải thích không? Tôi rất sẵn lòng hỗ trợ bạn dựa trên các tài liệu chi tiết của ngày học.",review_concept,[],[],[],,False,2026-07-29 04:26:14.060817+00:00,5,gemini-3.1-flash-lite,12586,73,0.000000,1293
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T0798,completed,M1349,student,"(Trang 1, đoạn được chọn: ""Bạn hãy tóm tắt toàn bộ ý chính trong Day1"")
+Bạn hãy tóm tắt toàn bộ ý chính trong Day1",,,,,,False,2026-07-29 04:26:14.060817+00:00,5,gemini-3.1-flash-lite,12586,73,0.000000,1293
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T0968,completed,M0238,student,"(Trang 7, đoạn được chọn: ""Bạn hãy đọc toàn bộ tài liệu và tóm tắt giúp tôi"")
+Bạn hãy đọc toàn bộ tài liệu và tóm tắt giúp tôi",,,,,,False,2026-07-29 04:26:43.140495+00:00,3,gemini-3.1-flash-lite,7830,83,0.000000,1571
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T0968,completed,M0925,tutor,"Rất xin lỗi bạn, hiện tại tôi không tìm thấy tài liệu chi tiết nào cho ""Day 1"" (mã day01_302) trong hệ thống để có thể tóm tắt các ý chính cho bạn.
+
+Để tôi có thể hỗ trợ tốt nhất, bạn có thể chia sẻ cụ thể hơn về chủ đề hoặc các khái niệm mà bài học này đề cập đến không? Tôi sẽ dựa trên thông tin đó để tìm kiếm và giải thích cho bạn.",review_concept,[],[],[],,False,2026-07-29 04:26:43.140495+00:00,3,gemini-3.1-flash-lite,7830,83,0.000000,1571
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T0100,completed,M1309,tutor,"Rất xin lỗi bạn, mặc dù đã tra cứu theo mã tài liệu `day01_302`, hệ thống hiện tại không hiển thị nội dung slide cụ thể cho bài học này để tôi có thể tóm tắt các ý chính cho bạn.
+
+Có thể tài liệu đang bị thiếu hoặc lỗi hiển thị. Bạn có thể cho tôi biết tên bài học hoặc một khái niệm cụ thể nào đó trong tài liệu này không? Tôi sẽ cố gắng tìm kiếm dựa trên các từ khóa cụ thể đó để hỗ trợ bạn hiệu quả nhất.",review_concept,[],[],[],,False,2026-07-29 04:27:25.176411+00:00,3,gemini-3.1-flash-lite,8214,101,0.000000,1480
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T0100,completed,M1861,student,"(Trang 7, đoạn được chọn: ""hãy tóm tắt toàn bộ  ý chính, các ý quan trọng trong tài liệu mã day01_302"")
+hãy tóm tắt toàn bộ  ý chính, các ý quan trọng trong tài liệu mã day01_302",,,,,,False,2026-07-29 04:27:25.176411+00:00,3,gemini-3.1-flash-lite,8214,101,0.000000,1480
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T0448,completed,M2114,student,"(Trang 14, đoạn được chọn: ""Tóm tắt toàn bộ bài giảng"")
+Tóm tắt toàn bộ bài giảng",,,,,,False,2026-07-29 04:28:07.868533+00:00,3,gemini-3.1-flash-lite,8580,112,0.000000,1520
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T0448,completed,M1267,tutor,"Rất xin lỗi bạn, hiện tại khi tìm kiếm theo mã tài liệu `day01_302`, hệ thống không trả về nội dung slide cụ thể để tôi có thể thực hiện tóm tắt cho bạn.
+
+Có vẻ như dữ liệu tài liệu cho ngày học này không được nạp đầy đủ trong hệ thống. Để tôi có thể hỗ trợ, bạn vui lòng cho biết tiêu đề hoặc các khái niệm chính trong bài học, hoặc bạn có thể cung cấp nội dung văn bản trực tiếp tại đây, tôi sẽ giúp bạn tóm tắt lại các ý quan trọng ngay lập tức.",review_concept,[],[],[],,False,2026-07-29 04:28:07.868533+00:00,3,gemini-3.1-flash-lite,8580,112,0.000000,1520
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T1049,completed,M0805,tutor,"Rất xin lỗi bạn, hiện tại hệ thống tìm kiếm không trả về nội dung slide cụ thể nào cho mã tài liệu `day01_302` để tôi có thể tóm tắt các ý chính.
+
+Vì tôi không có quyền truy cập trực tiếp vào các tệp tin bên ngoài ngoài những gì được cung cấp trong nội dung bài học, nên nếu có nội dung cụ thể hoặc các khái niệm mà bạn cần giải thích, bạn hãy chia sẻ tại đây nhé. Tôi sẽ rất sẵn lòng giúp bạn phân tích và tóm tắt những phần đó.",review_concept,[],[],[],,False,2026-07-29 04:28:49.912766+00:00,3,gemini-3.1-flash-lite,9108,107,0.000000,1519
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T1049,completed,M2104,student,"(Trang 14, đoạn được chọn: ""hãy bắt đầu cuộc trò chuyện mới quên các câu hỏi cũ của tôi đi, hãy tóm tắt lại những ý quan trọng trong tài liệu"")
+hãy bắt đầu cuộc trò chuyện mới quên các câu hỏi cũ của tôi đi, hãy tóm tắt lại những ý quan trọng trong tài liệu",,,,,,False,2026-07-29 04:28:49.912766+00:00,3,gemini-3.1-flash-lite,9108,107,0.000000,1519
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T1120,completed,M2069,tutor,"Rất xin lỗi bạn, hiện tại tôi đã kiểm tra hệ thống nhưng không tìm thấy nội dung bài giảng chi tiết cho tài liệu `day01_302` để có thể tóm tắt các ý chính giúp bạn.
+
+Để tôi có thể hỗ trợ tốt nhất, bạn có thể chia sẻ tên chủ đề, các thuật ngữ, hoặc nội dung mà bạn đang quan tâm trong bài học này không? Tôi sẽ dựa vào đó để giải thích hoặc tóm tắt các điểm quan trọng cho bạn.",review_concept,[],[],[],,False,2026-07-29 04:29:31.977612+00:00,3,gemini-3.1-flash-lite,9666,94,0.000000,1495
+C0469,U0123,Lecture_material_ms2039d0_hnxpxy,in_class,T1120,completed,M0447,student,"(Trang 14, đoạn được chọn: ""hãy tóm tắt lại những ý chính trong tài liệu học tập của ngày hôm nay"")
+hãy tóm tắt lại những ý chính trong tài liệu học tập của ngày hôm nay",,,,,,False,2026-07-29 04:29:31.977612+00:00,3,gemini-3.1-flash-lite,9666,94,0.000000,1495
+C0476,U0212,Lecture_material_ms5r18w1_oe5xlz,in_class,T0643,completed,M2059,student,"(Trang 3, đoạn được chọn: ""Tổng hợp kiến thức bài học, những ý chính, từ khóa cần lưu ý"")
+Tổng hợp kiến thức bài học, những ý chính, từ khóa cần lưu ý",,,,,,False,2026-07-29 07:30:37.816531+00:00,3,gemini-3.1-flash-lite,7554,65,0.000000,1390
+C0476,U0212,Lecture_material_ms5r18w1_oe5xlz,in_class,T0643,completed,M0280,tutor,"Rất tiếc, hiện tại tôi chưa tìm thấy nội dung tóm tắt kiến thức cụ thể cho bài học này trong hệ thống. Để tôi có thể hỗ trợ bạn tốt nhất, bạn có thể cho biết cụ thể hơn bạn đang quan tâm đến phần kiến thức nào hoặc chủ đề chính của ngày học hôm nay là gì không?",review_concept,[],[],[],,False,2026-07-29 07:30:37.816531+00:00,3,gemini-3.1-flash-lite,7554,65,0.000000,1390
+C0496,U0347,Lecture_material_ms203vsq_ob7vqp,in_class,T0280,completed,M1878,tutor,"Chào bạn, hiện tại tôi không thể tóm tắt nội dung vì hệ thống không tìm thấy dữ liệu slide tương ứng với từ khóa ""tóm tắt toàn bộ slide"". 
+
+Bạn có thể cung cấp tên chủ đề hoặc khái niệm cụ thể mà bạn đang muốn tìm hiểu trong bài học ngày hôm nay không? Tôi sẽ hỗ trợ bạn tìm kiếm và giải thích chi tiết các nội dung đó.",review_concept,[],[],[],,False,2026-07-27 01:52:38.667772+00:00,3,gemini-3.1-flash-lite,7491,79,0.000000,1479
+C0496,U0347,Lecture_material_ms203vsq_ob7vqp,in_class,T0280,completed,M0998,student,"(Trang 4, đoạn được chọn: ""tóm tắt toàn bộ slide"")
+tóm tắt toàn bộ slide",,,,,,False,2026-07-27 01:52:38.667772+00:00,3,gemini-3.1-flash-lite,7491,79,0.000000,1479
+C0500,U0054,Lecture_material_ms2044ey_k6uor3,in_class,T0301,completed,M1940,student,"(Trang 46, đoạn được chọn: ""Tóm tắt toàn bộ slide bài giảng này"")
+Tóm tắt toàn bộ slide bài giảng này",,,,,,False,2026-07-28 05:12:48.300711+00:00,3,gemini-3.1-flash-lite,8325,79,0.000000,1517
+C0500,U0054,Lecture_material_ms2044ey_k6uor3,in_class,T0301,completed,M0963,tutor,"Rất xin lỗi bạn, hiện tại tôi không thể truy xuất được tóm tắt tổng quát cho toàn bộ slide của bài giảng này thông qua công cụ tìm kiếm.
+
+Để hỗ trợ bạn học tập hiệu quả nhất, bạn có thể đặt câu hỏi về các khái niệm cụ thể hoặc các phần nội dung mà bạn đang quan tâm trong slide, tôi sẽ giải thích chi tiết cho bạn ngay!",review_concept,[],[],[],,False,2026-07-28 05:12:48.300711+00:00,3,gemini-3.1-flash-lite,8325,79,0.000000,1517
+C0501,U0217,New learning material,in_class,T0898,completed,M0848,student,"(Trang 4, đoạn được chọn: ""Phát triển Sản phẩm AI (AI Product)"")
+Giải thích đoạn bôi đen ở Trang 4: ""Phát triển Sản phẩm AI (AI Product)""",,,,,,False,2026-07-24 07:44:12.748981+00:00,4,gemini-3.1-flash-lite,15993,186,0.000000,1855
+C0501,U0217,New learning material,in_class,T0898,completed,M2233,tutor,"Hiện tại, nội dung cụ thể trong slide bài giảng không hiển thị chi tiết về khái niệm ""Phát triển Sản phẩm AI (AI Product)"" tại trang 4.
+
+Tuy nhiên, trong bối cảnh phát triển sản phẩm công nghệ nói chung và AI nói riêng, ""Phát triển Sản phẩm AI"" thường đề cập đến quy trình tạo ra một sản phẩm ứng dụng trí tuệ nhân tạo để giải quyết một vấn đề cụ thể của người dùng. Quy trình này thường bao gồm các bước: xác định bài toán, thu thập và xử lý dữ liệu, lựa chọn và huấn luyện mô hình (model training), đánh giá hiệu năng, và triển khai/tích hợp mô hình vào môi trường thực tế để tạo ra giá trị kinh doanh hoặc giá trị sử dụng.
+
+Nếu bạn có thêm thông tin hoặc các từ khóa khác liên quan trong bài giảng, mình có thể giúp bạn tra cứu chính xác hơn.",review_concept,[],[],[],,False,2026-07-24 07:44:12.748981+00:00,4,gemini-3.1-flash-lite,15993,186,0.000000,1855
+C0506,U0337,Lecture_material_ms4ahenz_7cpqa2,in_class,T0369,completed,M2398,tutor,"Rất xin lỗi bạn, có vẻ như nội dung slide 29 không hiển thị trong tài liệu hiện tại của ngày học này. Bạn có thể cho tôi biết tiêu đề hoặc một vài từ khóa chính trên slide đó không? Tôi sẽ dựa vào đó để tìm kiếm thông tin chính xác giúp bạn nhé.",review_concept,[],[],[],,False,2026-07-28 09:23:05.145880+00:00,3,gemini-3.1-flash-lite,8046,61,0.000000,1328
+C0506,U0337,Lecture_material_ms4ahenz_7cpqa2,in_class,T0369,completed,M2158,student,"(Trang 29, đoạn được chọn: ""giải thích slide này cho tôi"")
+giải thích slide này cho tôi",,,,,,False,2026-07-28 09:23:05.145880+00:00,3,gemini-3.1-flash-lite,8046,61,0.000000,1328
+C0508,U0033,New learning material,in_class,T0386,completed,M1691,tutor,"Rất tiếc, hiện tại tôi không có thông tin tổng quan hoặc tóm tắt cho toàn bộ nội dung slide của ngày hôm nay. Nếu bạn có câu hỏi cụ thể về một khái niệm hoặc phần nội dung nào trong tài liệu bài giảng, hãy cho tôi biết, tôi sẽ hỗ trợ bạn tìm kiếm và giải thích chi tiết nhé.",review_concept,[],[],[],,False,2026-07-25 08:15:49.144093+00:00,3,gemini-3.1-flash-lite,7488,68,0.000000,1726
+C0508,U0033,New learning material,in_class,T0386,completed,M2316,student,"(Trang 61, đoạn được chọn: ""tóm tắt toàn bộ slide"")
+tóm tắt toàn bộ slide",,,,,,False,2026-07-25 08:15:49.144093+00:00,3,gemini-3.1-flash-lite,7488,68,0.000000,1726
+C0510,U0210,Lecture_material_ms5r18w1_oe5xlz,in_class,T0292,completed,M0558,student,"(Trang 20, đoạn được chọn: ""Dạy tôi chi tiết toàn bộ 39 trang slides"")
+Dạy tôi chi tiết toàn bộ 39 trang slides",,,,,,False,2026-07-29 09:22:23.293787+00:00,2,gemini-3.1-flash-lite,5004,121,0.000000,1585
+C0510,U0210,Lecture_material_ms5r18w1_oe5xlz,in_class,T0292,completed,M0324,tutor,"Chào bạn, mình là trợ giảng AI của khoá học. Rất vui được đồng hành cùng bạn!
+
+Với yêu cầu về nội dung của toàn bộ 39 trang slide trong một lần, mình xin phép không thể tóm tắt toàn bộ chi tiết cùng lúc vì sẽ rất dài và khó nắm bắt trọng tâm. Để hỗ trợ bạn hiệu quả nhất, bạn có thể cho mình biết chủ đề cụ thể hoặc khái niệm nào trong bài giảng ngày hôm nay mà bạn muốn tìm hiểu kỹ hơn không?
+
+Mình sẽ giúp bạn giải thích chi tiết, kèm ví dụ và trích dẫn nguồn từ tài liệu ngay lập tức.",review_concept,[],[],[],,False,2026-07-29 09:22:23.293787+00:00,2,gemini-3.1-flash-lite,5004,121,0.000000,1585
+C0514,U0185,Lecture_material_ms2044ey_k6uor3,in_class,T0964,completed,M0070,student,"(Trang 15, đoạn được chọn: ""Giải thích đoạn bôi đen ở Trang 18: ""e"""")
+Giải thích đoạn bôi đen ở Trang 18: ""e""",,,,,,False,2026-07-28 07:20:58.458758+00:00,3,gemini-3.1-flash-lite,7533,87,0.000000,1416
+C0514,U0185,Lecture_material_ms2044ey_k6uor3,in_class,T0964,completed,M2280,tutor,"Rất xin lỗi bạn, hiện tại tôi không tìm thấy nội dung cụ thể cho đoạn ""e"" ở trang 18 trong tài liệu bài giảng ngày hôm nay.
+
+Bạn có thể chia sẻ thêm cho tôi ngữ cảnh hoặc nội dung của trang đó (ví dụ: nó nằm trong sơ đồ nào hay giải thích về thành phần gì của hệ thống Agentic) không? Tôi sẽ dựa vào đó để tìm kiếm thông tin chính xác nhất giúp bạn.",review_concept,[],[],[],down,False,2026-07-28 07:20:58.458758+00:00,3,gemini-3.1-flash-lite,7533,87,0.000000,1416
+C0517,U0258,New learning material,in_class,T0942,completed,M0193,tutor,"Rất tiếc, hiện tại hệ thống không truy xuất được dữ liệu nội dung cụ thể của ""Day 1"" từ các tài liệu slide đã cung cấp trong hệ thống. Bạn vui lòng kiểm tra lại tên ngày học hoặc cung cấp thêm thông tin chi tiết (ví dụ: chủ đề chính, tiêu đề bài giảng) để mình có thể hỗ trợ bạn chính xác hơn.",review_concept,[],[],[],,False,2026-07-24 05:00:23.654184+00:00,5,gemini-3.1-flash-lite,20066,73,0.000000,1663
+C0517,U0258,New learning material,in_class,T0942,completed,M0552,student,"(Trang 1, đoạn được chọn: ""tóm tắt toàn bộ nội dung của Day 1, những điểm chính và nội dung quan trọng"")
+tóm tắt toàn bộ nội dung của Day 1, những điểm chính và nội dung quan trọng",,,,,,False,2026-07-24 05:00:23.654184+00:00,5,gemini-3.1-flash-lite,20066,73,0.000000,1663
+C0519,U0045,Lecture_material_ms204i6x_gqwyya,in_class,T0714,completed,M0124,tutor,"Chào bạn, hiện tại tôi không thể cung cấp bản tóm tắt chi tiết cho toàn bộ nội dung của buổi học ngày hôm nay vì các tệp tin slide cụ thể cho ngày `day04-prompt-engineering-tool-calling` không hiển thị trong dữ liệu được tải lên.
+
+Để tôi có thể hỗ trợ bạn tốt nhất, bạn vui lòng cho biết cụ thể khái niệm hoặc chủ đề nào trong bài học mà bạn đang cần làm rõ, tôi sẽ tìm kiếm thông tin chi tiết và giải thích giúp bạn ngay!",review_concept,[],[],[],,False,2026-07-29 02:43:59.022380+00:00,3,gemini-3.1-flash-lite,7551,105,0.000000,1482
+C0519,U0045,Lecture_material_ms204i6x_gqwyya,in_class,T0714,completed,M1258,student,"(Trang 7, đoạn được chọn: ""tóm tắt. chi. tiết. bài học cảu tất cả slide hôm nay"")
+tóm tắt. chi. tiết. bài học cảu tất cả slide hôm nay",,,,,,False,2026-07-29 02:43:59.022380+00:00,3,gemini-3.1-flash-lite,7551,105,0.000000,1482
+C0520,U0286,New learning material,in_class,T1129,completed,M0802,tutor,"Rất tiếc, tôi không tìm thấy phần tóm tắt tổng quát trong tài liệu bài giảng này. Để có cái nhìn chính xác nhất về nội dung, bạn có thể cho tôi biết bạn đang quan tâm đến chủ đề hoặc khái niệm cụ thể nào trong bài học không? Tôi sẽ hỗ trợ bạn tìm kiếm và giải thích chi tiết về các phần đó.",review_concept,[],[],[],,False,2026-07-23 10:45:07.819762+00:00,5,gemini-3.1-flash-lite,19951,72,0.000000,1566
+C0520,U0286,New learning material,in_class,T1129,completed,M0235,student,"(Trang 81, đoạn được chọn: ""tóm tắt ý chính toàn bộ slide"")
+tóm tắt ý chính toàn bộ slide",,,,,,False,2026-07-23 10:45:07.819762+00:00,5,gemini-3.1-flash-lite,19951,72,0.000000,1566
+C0528,U0153,Lecture_material_ms4ahenz_7cpqa2,in_class,T0812,completed,M1073,tutor,"Xin lỗi bạn, tôi không tìm thấy nội dung nào tại trang 26 trong tài liệu của bài học này. Bạn có thể kiểm tra lại số trang hoặc cung cấp thêm thông tin về nội dung bạn muốn tìm hiểu không? Tôi sẽ rất sẵn lòng hỗ trợ bạn giải thích các khái niệm trong bài học.",review_concept,[],[],[],,False,2026-07-29 03:36:44.825300+00:00,3,gemini-3.1-flash-lite,8484,64,0.000000,1500
+C0528,U0153,Lecture_material_ms4ahenz_7cpqa2,in_class,T0812,completed,M1439,student,"(Trang 26, đoạn được chọn: ""giải thích slide trang 26"")
+giải thích slide trang 26",,,,,,False,2026-07-29 03:36:44.825300+00:00,3,gemini-3.1-flash-lite,8484,64,0.000000,1500
+C0529,U0178,Lecture_material_ms5rpr5o_wgl8wy,in_class,T0542,completed,M0566,tutor,"Xin chào, rất tiếc là tôi không thể truy xuất nội dung tổng quát của toàn bộ slide trong tệp tài liệu này thông qua câu lệnh tóm tắt tự động. 
+
+Để tôi có thể hỗ trợ bạn tốt nhất, bạn vui lòng cho biết chủ đề cụ thể hoặc khái niệm nào trong bài học mà bạn muốn tìm hiểu hoặc cần giải thích nhé? Tôi sẽ dựa vào nội dung tài liệu để giải đáp chi tiết cho bạn.",review_concept,[],[],[],,False,2026-07-29 09:05:25.844379+00:00,3,gemini-3.1-flash-lite,7506,89,0.000000,1489
+C0529,U0178,Lecture_material_ms5rpr5o_wgl8wy,in_class,T0542,completed,M0384,student,"(Trang 21, đoạn được chọn: ""tóm tắt toàn bộ slide cho tôi"")
+tóm tắt toàn bộ slide cho tôi",,,,,,False,2026-07-29 09:05:25.844379+00:00,3,gemini-3.1-flash-lite,7506,89,0.000000,1489
+C0530,U0191,New learning material,in_class,T0603,completed,M1608,tutor,"Rất tiếc, tôi không thể tìm thấy nội dung chi tiết trong các slide bài giảng của ngày hôm nay để tóm tắt cho bạn. Nếu bạn có câu hỏi cụ thể về một chủ đề hoặc khái niệm nào đó trong bài học, hãy cho tôi biết, tôi sẽ hỗ trợ bạn tìm kiếm và giải thích dựa trên tài liệu liên quan.",review_concept,[],[],[],,False,2026-07-24 09:08:04.231370+00:00,4,gemini-3.1-flash-lite,15945,69,0.000000,1690
+C0530,U0191,New learning material,in_class,T0603,completed,M0781,student,"(Trang 5, đoạn được chọn: ""tóm tắt cho tôi toàn bộ slide"")
+tóm tắt cho tôi toàn bộ slide ",,,,,,False,2026-07-24 09:08:04.231370+00:00,4,gemini-3.1-flash-lite,15945,69,0.000000,1690
+C0533,U0301,Lecture_material_ms4x7dx1_t0qyxg,in_class,T1180,completed,M2049,student,"(Trang 98, đoạn được chọn: ""Tóm tắt bài học và kiến thức cần nắm vững trong Day 4. Sau đó viết ra thành danh sách cho tôi"")
+Tóm tắt bài học và kiến thức cần nắm vững trong Day 4. Sau đó viết ra thành danh sách cho tôi",,,,,,False,2026-07-29 05:41:55.451038+00:00,3,gemini-3.1-flash-lite,7611,105,0.000000,1430
+C0533,U0301,Lecture_material_ms4x7dx1_t0qyxg,in_class,T1180,completed,M0941,tutor,"Chào bạn, cảm ơn bạn đã đặt câu hỏi.
+
+Rất tiếc, hiện tại nội dung slide của ngày hôm nay (Day 4: Prompt Engineering & Tool Calling) không chứa trang số 98 hay phần tổng kết cuối bài như bạn đã chỉ ra. Do đó, tôi không thể cung cấp danh sách tóm tắt dựa trên tài liệu đó.
+
+Nếu bạn có các câu hỏi cụ thể về khái niệm hoặc nội dung kỹ thuật trong bài học này, hãy chia sẻ để tôi có thể hỗ trợ giải thích chi tiết cho bạn nhé!",review_concept,[],[],[],,False,2026-07-29 05:41:55.451038+00:00,3,gemini-3.1-flash-lite,7611,105,0.000000,1430
+C0535,U0254,New learning material,in_class,T0379,completed,M2267,tutor,"Rất tiếc, hiện tại hệ thống không tìm thấy tóm tắt tổng quát cho bài học này trong các slide được cung cấp. Bạn có thể cho biết chủ đề cụ thể hoặc khái niệm bạn đang muốn tìm hiểu trong ngày học hôm nay không? Tôi sẽ dựa vào đó để tra cứu thông tin chi tiết giúp bạn.",review_concept,[],[],[],,False,2026-07-24 02:15:17.580817+00:00,5,gemini-3.1-flash-lite,19931,66,0.000000,1872
+C0535,U0254,New learning material,in_class,T0379,completed,M2062,student,"(Trang 1, đoạn được chọn: ""summary this lecture"")
+summary this lecture",,,,,,False,2026-07-24 02:15:17.580817+00:00,5,gemini-3.1-flash-lite,19931,66,0.000000,1872
+C0550,U0083,Lecture_material_ms2lb2ke_c1je8j,in_class,T0105,completed,M2382,student,"(Trang 26, đoạn được chọn: ""giải thích các thuật ngữ ở trang 26"")
+giải thích các thuật ngữ ở trang 26",,,,,,False,2026-07-27 09:10:01.991323+00:00,3,gemini-3.1-flash-lite,7530,72,0.000000,1564
+C0550,U0083,Lecture_material_ms2lb2ke_c1je8j,in_class,T0105,completed,M1410,tutor,"Chào bạn, rất tiếc là hệ thống không tìm thấy nội dung cụ thể cho trang 26 trong tài liệu của ngày học này. Để mình có thể giải thích chính xác các thuật ngữ đó cho bạn, bạn có thể vui lòng chụp lại hoặc cung cấp thêm thông tin về các từ ngữ mà bạn đang thắc mắc trên trang này được không?",review_concept,[],[],[],,False,2026-07-27 09:10:01.991323+00:00,3,gemini-3.1-flash-lite,7530,72,0.000000,1564
+C0550,U0083,Lecture_material_ms2lb2ke_c1je8j,in_class,T0781,completed,M1938,tutor,"Rất tiếc, mình đã kiểm tra toàn bộ slide của buổi học hôm nay nhưng không tìm thấy đoạn code nào ở trang 41.
+
+Có thể do mình chưa tìm đúng từ khóa hoặc tài liệu có cách đánh số trang khác với bạn. Bạn có thể vui lòng chụp ảnh hoặc sao chép đoạn code đó vào đây không? Mình sẽ giải thích chi tiết logic từng dòng code cho bạn ngay sau khi nhận được nội dung.",review_concept,[],[],[],,False,2026-07-27 09:47:47.475234+00:00,3,gemini-3.1-flash-lite,9849,89,0.000000,1564
+C0550,U0083,Lecture_material_ms2lb2ke_c1je8j,in_class,T0781,completed,M0944,student,"(Trang 41, đoạn được chọn: ""giải thích code trong trang 41"")
+giải thích code trong trang 41",,,,,,False,2026-07-27 09:47:47.475234+00:00,3,gemini-3.1-flash-lite,9849,89,0.000000,1564
+C0554,U0239,Lecture_material_ms203vsq_ob7vqp,in_class,T0381,completed,M1218,tutor,"Rất xin lỗi bạn, có vẻ như hệ thống không tìm thấy nội dung cụ thể của trang 8 trong tài liệu được cung cấp cho ngày học hôm nay.
+
+Bạn có thể cung cấp thêm thông tin về tiêu đề hoặc các khái niệm chính có trên slide đó không? Nếu bạn chụp ảnh hoặc dán nội dung văn bản trên slide vào đây, tôi sẽ giải thích chi tiết ngay cho bạn.",review_concept,[],[],[],,False,2026-07-27 03:58:10.420725+00:00,3,gemini-3.1-flash-lite,7524,82,0.000000,1392
+C0554,U0239,Lecture_material_ms203vsq_ob7vqp,in_class,T0381,completed,M0182,student,"(Trang 8, đoạn được chọn: ""tôi cần bạn giải thích cho tôi về slide này"")
+tôi cần bạn giải thích cho tôi về slide này ",,,,,,False,2026-07-27 03:58:10.420725+00:00,3,gemini-3.1-flash-lite,7524,82,0.000000,1392
+C0564,U0090,New learning material,in_class,T0936,completed,M1573,tutor,"Rất tiếc là hiện tại mình chưa tìm thấy thông tin chi tiết về nội dung của **trang 18** trong hệ thống dữ liệu bài giảng. 
+
+Để mình có thể hỗ trợ bạn giải thích chính xác nhất, bạn có thể chia sẻ thêm cho mình biết **tiêu đề** của slide đó hoặc một vài **từ khóa chính/đoạn văn bản** xuất hiện trên trang 18 được không? Mình sẽ dựa vào đó để tra cứu và giải đáp kỹ hơn cho bạn ngay.",give_direct_answer,[],[],[],,False,2026-07-23 08:10:00.008334+00:00,6,gemini-3-flash,23980,95,0.000000,5714
+C0564,U0090,New learning material,in_class,T0936,completed,M1565,student,"(Trang 18, đoạn được chọn: ""giải thích rõ hơn cho tôi về slide 18"")
+giải thích rõ hơn cho tôi về slide 18",,,,,,False,2026-07-23 08:10:00.008334+00:00,6,gemini-3-flash,23980,95,0.000000,5714
+C0581,U0141,day02-c301,in_class,T0443,completed,M0623,tutor,"Rất tiếc, hiện tại hệ thống tìm kiếm không trả về tóm tắt tổng quát cho toàn bộ slide của ngày học hôm nay. Để có thể hỗ trợ bạn tốt nhất, bạn vui lòng cho biết chủ đề cụ thể hoặc khái niệm nào bạn đang quan tâm hoặc muốn làm rõ, tôi sẽ hỗ trợ bạn chi tiết dựa trên nội dung bài giảng.",review_concept,[],[],[],down,False,2026-07-24 09:53:03.772887+00:00,5,gemini-3.1-flash-lite,19916,71,0.000000,1613
+C0581,U0141,day02-c301,in_class,T0443,completed,M1450,student,"(Trang 57, đoạn được chọn: ""tóm tắt toàn bộ slide"")
+tóm tắt toàn bộ slide ",,,,,,False,2026-07-24 09:53:03.772887+00:00,5,gemini-3.1-flash-lite,19916,71,0.000000,1613

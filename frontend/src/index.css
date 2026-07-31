@@ -1,0 +1,205 @@
+/* Custom CSS styling matching exact user-provided computed CSS specifications */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --font-main: "Be Vietnam Pro", "Be Vietnam Pro Fallback", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --bg-main: #f0f4f8;
+  --bg-card: #ffffff;
+  --primary-navy: #0e2439;
+  --primary-red: #d32027;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --border-light: rgba(14, 36, 57, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden !important;
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+}
+
+body {
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden !important;
+  font-family: var(--font-main);
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#root {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, button, input {
+  font-family: var(--font-main);
+}
+
+/* Header style class with user's exact computed CSS rules */
+.vlearn-header-exact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  padding: 16px 24px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(14, 36, 57, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+  color: #0e2439;
+  font-family: var(--font-main);
+  line-height: 24px;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+/* Pulsing Radar Green Dot Animation */
+@keyframes pulse-ring-fade {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  60% {
+    transform: scale(1.6);
+    opacity: 0.3;
+    box-shadow: 0 0 0 7px rgba(16, 185, 129, 0.2);
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+    box-shadow: 0 0 0 12px rgba(16, 185, 129, 0);
+  }
+}
+
+.pulsing-green-dot-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}
+
+.pulsing-green-dot-core {
+  width: 7px;
+  height: 7px;
+  background-color: #10b981;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.pulsing-green-dot-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(16, 185, 129, 0.6);
+  animation: pulse-ring-fade 1.8s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: 1;
+}
+
+/* Sidebar sliding animation */
+.sidebar-panel {
+  transition: opacity 0.25s ease;
+  will-change: width, opacity;
+}
+
+.edge-toggle-btn {
+  transition: left 0.25s cubic-bezier(0.4, 0, 0.2, 1), right 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.edge-toggle-btn:hover {
+  background-color: #f8fafc !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.accordion-body {
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.vlearn-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  border: 1px solid #eef2f6;
+  transition: all 0.2s ease;
+}
+
+.vlearn-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* PDF.js Text Layer styling chuẩn tỉ lệ bôi đen văn bản slide */
+.textLayer {
+  position: absolute;
+  text-align: initial;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 1;
+  line-height: 1.0;
+  pointer-events: auto;
+  z-index: 2;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  transform-origin: 0 0;
+}
+
+.textLayer span,
+.textLayer br {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+}
+
+/* Màu bôi đen highlight văn bản sắc nét & tinh tế */
+.textLayer ::selection {
+  background: rgba(2, 132, 199, 0.25) !important;
+  color: transparent !important;
+}
+
+.textLayer ::-moz-selection {
+  background: rgba(2, 132, 199, 0.25) !important;
+  color: transparent !important;
+}

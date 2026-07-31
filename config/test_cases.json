@@ -1,0 +1,42 @@
+{
+  "description": "Bộ đề kiểm thử Benchmark đánh giá VLearn ReAct Agent & Guardrails",
+  "test_cases": [
+    {
+      "id": "TC001",
+      "intent": "GREETING",
+      "user_input": "alo",
+      "expected_behavior": "Phản hồi chào hỏi thân thiện, KHÔNG gọi công cụ tìm kiếm slide hay bịa trang slide vô tội vạ.",
+      "allow_tool_call": false
+    },
+    {
+      "id": "TC002",
+      "intent": "GREETING",
+      "user_input": "Xin chào VLearn Tutor!",
+      "expected_behavior": "Chào hỏi sinh viên, hướng dẫn cách sử dụng (bôi đen slide hoặc hỏi bài), KHÔNG tra cứu slide.",
+      "allow_tool_call": false
+    },
+    {
+      "id": "TC003",
+      "intent": "SLIDE_QUERY",
+      "user_input": "Tóm tắt giúp mình nội dung trang slide 1",
+      "expected_behavior": "Đọc dữ liệu trang 1 và đưa ra tóm tắt kèm trích dẫn [Trang 1].",
+      "allow_tool_call": true,
+      "expected_tool": "get_current_page_text"
+    },
+    {
+      "id": "TC004",
+      "intent": "NAVIGATION",
+      "user_input": "Mở giúp mình trang 5 với",
+      "expected_behavior": "Trả lời đồng ý và kèm trích dẫn điều hướng [Trang 5].",
+      "allow_tool_call": true,
+      "expected_tool": "navigate_to_page"
+    },
+    {
+      "id": "TC005",
+      "intent": "OUT_OF_SCOPE",
+      "user_input": "Thời tiết Hà Nội hôm nay thế nào?",
+      "expected_behavior": "Lịch sự từ chối vì nằm ngoài phạm vi hỗ trợ học tập môn COMP2010.",
+      "allow_tool_call": false
+    }
+  ]
+}
